@@ -1,0 +1,94 @@
+.s-povestka
+    background-color #fff
+    overflow hidden
+
+    &__in
+        container(1040px)
+        padding 165px 20px 0
+        min-height 785px
+        +below(1280px)
+            padding-top 50px
+            padding-bottom 50px
+        +below(540px)
+            padding-bottom 260px
+        &::after
+            content ""
+            sprite($icon_vbilet)
+            position absolute
+            right -30px
+            bottom 30px
+            +below(1280px)
+                right 20px
+                bottom 20px
+            +below(540px)
+                right auto
+                left 50%
+                margin-left -80px
+
+    &__photo
+        display block
+        width 100%
+        max-width 600px
+        height auto
+        position absolute
+        bottom 0
+        left -340px
+        margin 0
+        z-index 10
+        +below(1280px)
+            position relative
+            margin 0 auto
+            left auto
+
+    &__title
+        max-width 1000px
+        min-height 214px
+        background-color #212025
+        padding 30px 30px 50px 135px
+        color #fefefe
+        font(Russo)
+        font-size 60px
+        line-height 1.2
+        text-transform uppercase
+        margin 0 auto
+        +below(1280px)
+            text-align center
+            padding-left 30px
+        +below(540px)
+            font-size 40px
+        +below(400px)
+            font-size 34px
+
+    &__subtitle
+        max-width 735px
+        min-height 60px
+        background-color #ffea00
+        color black
+        font(Bold)
+        font-size 24px
+        line-height 1
+        padding 20px 20px 20px 245px
+        position relative
+        margin -22px 0 70px
+        +below(1280px)
+            margin-left auto
+            margin-right auto
+            text-align center
+            padding-left 20px
+        +below(540px)
+            font-size 20px
+            margin-bottom 40px
+
+    &__text
+        color black
+        font(Bold)
+        font-size 24px
+        line-height 1.5
+        padding 0 80px 0 245px
+        margin 0
+        +below(1280px)
+            padding 0 180px 0 0
+        +below(540px)
+            font-size 18px
+            text-align center
+            padding 0
