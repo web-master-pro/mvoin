@@ -1,7 +1,129 @@
 .header
-    width: 100%;
-    position: relative;
-    background: url(img/background-bg.jpg) no-repeat center center;
+    width 100%
+    position relative
+    background url(img/header-bg.jpg) no-repeat center center
+    background-size cover
 
     &__in
-        container(1000px)
+        container(1010px)
+        padding 75px 20px
+        +below(480px)
+            padding 35px 20px
+
+
+    &__logo
+        display block
+        sprite($icon_logo)
+        margin 0 auto 65px
+        +below(480px)
+            margin-bottom 35px
+
+    &__list
+        list-style: none;
+        font-size 0
+        text-align center
+        padding 0
+        margin 0 0 15px
+
+    &__item
+        display inline-block
+        font(Black)
+        font-size 20px
+        line-height 1
+        text-transform uppercase
+        margin 0 45px 20px
+        +below(480px)
+            margin-bottom 5px
+
+    &__title
+        max-width 971px
+        min-height 95px
+        background-color #212025
+        color white
+        font(Russo)
+        font-size 50px
+        line-height 1
+        text-align center
+        text-transform uppercase
+        padding 25px 20px 35px
+        position relative
+        margin 0 auto
+        +below(480px)
+            font-size 34px
+
+    &__subtitle
+        max-width 789px
+        min-height 56px
+        background-color #ffea00
+        color #212025
+        font(Bold)
+        font-size 28px
+        line-height 1
+        text-align center
+        padding 17px 17px 17px
+        position relative
+        margin -13px auto 62px
+        +below(480px)
+            font-size 24px
+            margin-bottom 35px
+
+    &__price
+        max-width 455px
+        min-height 70px
+        background-color #212025
+        color white
+        font(Russo)
+        font-size 27px
+        line-height 1
+        text-align center
+        text-transform uppercase
+        padding 23px 20px
+        margin 0 auto 71px
+        +below(480px)
+            font-size 20px
+            margin-bottom 35px
+        strong
+            font-size 32px
+            font-weight 400
+            +below(480px)
+                font-size 24px
+
+    &__button
+        display block
+        width 100%
+        max-width 320px
+        height 55px
+        background-color #ffea00
+        background-image linear-gradient(to top, transparent 0%, rgba(255, 255, 255, 0.16) 100%)
+        border none
+        border-top 3px solid transparent
+        border-bottom 3px solid #b8a900
+        color black
+        font(Russo)
+        font-size 17px
+        font-weight 400
+        line-height 1
+        text-align center
+        padding 0 20px 0 60px
+        text-transform uppercase
+        transition all .5s ease
+        margin 0 auto 15px
+        position relative
+        cursor pointer
+        &::before
+            content ""
+            sprite($icon_video)
+            position absolute
+            top 10px
+            left 45px
+        &:hover
+            background-color #ffec1b
+            background-image none
+
+    &__subbutton
+        color #ffea00
+        font(Regular)
+        font-size 15px
+        line-height 1
+        text-transform lowercase
+        text-align center

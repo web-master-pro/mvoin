@@ -1,5 +1,4 @@
-# Проект "Мирный воин" (mvoin) 
-Шаблон для верстки c ОПТИМИЗАЦИЕЙ для Google PageSpeed Insights
+# Проект "Мирный воин" (mvoin)
 
 ## Установка:
 1. git clone https://github.com/web-master-pro/mvoin
