@@ -1,0 +1,40 @@
+.mmenu-trigger
+    display none
+    width 30px
+    height 30px
+    background-color transparent
+    border none
+    cursor pointer
+    backface-visibility hidden
+    +below(768px)
+        display block
+
+    &__in
+        top 12px
+        left 0
+        &
+        &::before
+        &::after
+            display block
+            width 30px
+            height 6px
+            background #fff
+            backface-visibility hidden
+            transition all 0.1s
+            position absolute
+
+        &::before
+            content ""
+            top -12px
+            left 0
+        &::after
+            content ""
+            top 12px
+            left 0
+
+    &.on &__in
+        background-color transparent
+        &::before
+            transform rotate(45deg) translate(10px, 7px)
+        &::after
+            transform rotate(-45deg) translate(10px, -7px)

@@ -92,7 +92,7 @@
         display block
         width 100%
         max-width 320px
-        height 55px
+        height 59px
         background-color #ffea00
         background-image linear-gradient(to top, transparent 0%, rgba(255, 255, 255, 0.16) 100%)
         border none
@@ -114,8 +114,10 @@
             content ""
             sprite($icon_video)
             position absolute
-            top 10px
+            top 12px
             left 45px
+            +below(480px)
+                left 30px
         &:hover
             background-color #ffec1b
             background-image none
@@ -127,3 +129,4 @@
         line-height 1
         text-transform lowercase
         text-align center
+        margin 0

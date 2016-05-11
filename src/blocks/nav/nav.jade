@@ -1,9 +1,13 @@
+include ../mmenu-trigger/mmenu-trigger
 mixin nav(addclass)
     nav.nav(class= addclass)#nav
         .nav__in
-            ul.nav__list
-                li.nav__item
-                    a(href="#").nav__link Автор курса
-                    a(href="#").nav__link.active Бесплатные видео
-                    a(href="#").nav__link Вопрос/Ответ
+            +mmenu-trigger("nav__mmenu-trigger")
+            ul.nav__menu
+                li.nav__menu-item
+                    a(href="#").nav__menu-link Автор курса
+                li.nav__menu-item
+                    a(href="#").nav__menu-link.nav__menu-link--active Бесплатные видео
+                li.nav__menu-item
+                    a(href="#").nav__menu-link Вопрос/Ответ
             button.nav__button Купить курс
