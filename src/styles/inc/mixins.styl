@@ -1,0 +1,52 @@
+container(w = 1000px)
+    display block
+    max-width w
+    margin 0 auto
+    position relative
+
+font(face = Regular)
+    if face == Regular
+        font-family "RalewayRegular", sans-serif
+        font-weight 400
+    if face == Bold
+        font-family "RalewayBold", sans-serif
+        font-weight 700
+    if face == Black
+        font-family "RalewayBlack", sans-serif
+        font-weight 900
+    if face == Extra
+        font-family "RalewayExtraBold", sans-serif
+        font-weight 700
+    if face == Russo
+        font-family "RussoOneRegular", sans-serif
+        font-weight 400
+
+button(bgcolor = blue)
+    display block
+    width 100%
+    max-width 278px
+    height 60px
+    if bgcolor == blue
+        background-color #004c9d
+    if bgcolor == green
+        background-color #156500
+    border none
+    color white
+    font(Bold)
+    font-size 20px
+    line-height 1
+    letter-spacing: 0.05em
+    text-transform uppercase
+    text-align center
+    text-decoration none
+    outline: none
+    cursor pointer
+    transition all 0.3s ease
+
+    &:hover
+        color @color
+        text-decoration none
+        if bgcolor == blue
+            background-color #0069d9
+        if bgcolor == green
+            background-color lighten(#156500, 15%)

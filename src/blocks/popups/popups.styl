@@ -1,0 +1,176 @@
+.form-order
+    display block
+    max-width 530px
+    min-height 500px
+    background-color white
+    box-shadow 0 0 30px rgba(0, 0, 0, 0.3)
+    padding 60px 15px 25px
+    margin auto
+
+    &__title
+        color: #003874;
+        font(Bold)
+        font-size: 32px;
+        line-height: 1.3
+        text-align: center;
+        margin 0 0 50px
+
+    &__input
+        input()
+        display block
+        margin: 0 auto 15px
+
+    &__button
+        button()
+        height 50px
+        margin 20px auto 90px
+        +below(800px)
+            margin-bottom 50px
+
+    &__privacy
+        max-width 278px
+        color #58585a
+        font(Thin)
+        font-size 14px
+        line-height 1
+        padding-left 30px
+        text-align left
+        position relative
+        margin 0 auto
+        +below(800px)
+            max-width 170px
+        
+
+.popup-thankyou
+    display block
+    max-width 400px
+    min-height 200px
+    background-color white
+    box-shadow 0 0 30px rgba(0, 0, 0, 0.3)
+    padding 60px 15px 50px
+    margin auto
+
+    &__title
+        color: #003874;
+        font(Bold)
+        font-size: 36px;
+        line-height: 1.3
+        text-align: center;
+        margin 0 0 20px
+
+    &__text
+        max-width 278px
+        color #003874
+        font(Thin)
+        font-size 22px
+        line-height 1.2
+        text-align center
+        margin 0 auto 45px
+        strong
+            font(Bold)
+    &__button
+        button()
+        height 50px
+        margin 0 auto
+
+.popup-privacy
+    display block
+    width 100%
+    height auto
+    max-width 1000px
+    min-height 420px
+    background #fff
+    padding 70px 80px 50px
+    position relative
+    margin 20px auto
+
+    &__content
+        display block
+        width 100%
+        height 100%
+        color #00060c
+        font()
+        font-size 18px
+        line-height 1.4
+        text-align left
+        +below(480px)
+            font-size 16px
+
+        h2
+            color #003874
+            font(Bold)
+            font-size 30px
+            line-height 1
+            text-align center
+            text-transform uppercase
+            margin 0 auto 50px
+            +below(480px)
+                font-size 22px
+
+        h3
+            color #003874
+            font-size 24px
+            font(Bold)
+            line-height 1
+            text-align center
+            margin 0 0 25px
+            +below(480px)
+                font-size 20px
+
+        p
+            line-height 1.3
+            margin 0 0 20px
+
+        a
+            color #003874
+            text-decoration: underline
+            &:hover
+                color @color
+                text-decoration none
+
+.popup
+    .mfp-close
+        display block
+        width 35px
+        height 35px
+        background-color #004c9d
+        color #fff
+        font(Thin)
+        font-size 35px
+        line-height 35px
+        text-align center
+        border none
+        padding 2px 0 0
+        position absolute
+        opacity 0.2
+        top 0px
+        right 0px
+        transition opacity 0.3s ease
+        &:hover
+            color #fff
+            opacity 0.8
+            text-shadow none
+
+
+.mfp-zoom-in .popup
+    opacity 0
+    transition all 0.2s ease-in-out
+    transform scale(0.8)
+
+.mfp-zoom-in.mfp-bg
+    opacity 0
+    transition all 0.3s ease-out
+
+.mfp-zoom-in.mfp-ready .popup
+    opacity 1
+    transform scale(1)
+
+.mfp-zoom-in.mfp-ready.mfp-bg
+    opacity 0.8
+
+.mfp-zoom-in.mfp-removing .popup
+    transform scale(0.8)
+    opacity 0
+
+.mfp-zoom-in.mfp-removing.mfp-bg
+    opacity 0

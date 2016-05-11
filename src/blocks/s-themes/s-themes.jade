@@ -1,0 +1,46 @@
+mixin s-themes(addclass)
+    section.s-themes(class= addclass)#themes
+        .s-themes__in
+            h2.s-themes__title Темы курса
+            p.s-themes__subtitle Посмотрите <em>первые 3 видео</em> бесплатно!
+            
+            .contents.s-themes__contents
+                ul.contents__pages
+                    li.contents__page
+                        h3.contents__page-title 1. Введение
+                        ol.contents__videos
+                            li.contents__video 1
+                                a.contents__video-link Права и обязанности призывников
+                            li.contents__video 2
+                                a.contents__video-link Моя история
+                            li.contents__video 3
+                                a.contents__video-link Как откосить от армии
+                            li.contents__video.contents__video--disabled 4
+                                a.contents__video-link Сколько стоит военный билет
+                            li.contents__video.contents__video--disabled 5
+                                a.contents__video-link Пришла повестка
+                            li.contents__video.contents__video--disabled 6
+                                a.contents__video-link Призыв на военную службу. Весенний и осенний
+
+                ol.contents__tabs
+                    li.contents__tab
+                        a(href="#").contents__tab-link 1. Введение
+                    li.contents__tab
+                        a(href="#").contents__tab-link 2. Диагностика
+                    li.contents__tab
+                        a(href="#").contents__tab-link 3. Обследования
+                    li.contents__tab
+                        a(href="#").contents__tab-link 4. Подтверждение в военкомате
+                    li.contents__tab
+                        a(href="#").contents__tab-link 5. КМО
+                    li.contents__tab
+                        a(href="#").contents__tab-link 6. Отсрочка
+                    li.contents__tab
+                        a(href="#").contents__tab-link 7. Дополнительно
+
+            p.s-themes__text Кто-то защищает страну, кто-то строит экономику. Ты уже выбрал свой путь. Закажи видеокурс Талгата Юнусова и останься на гражданке.
+
+            .s-themes__button-block
+                button.s-themes__button Получить полный доступ к курсу
+                p.s-themes__subbutton и начать изучение всех видеоматериалов
+                            

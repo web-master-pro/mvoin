@@ -1,0 +1,9 @@
+mixin nav(addclass)
+    nav.nav(class= addclass)#nav
+        .nav__in
+            ul.nav__list
+                li.nav__item
+                    a(href="#").nav__link Автор курса
+                    a(href="#").nav__link.active Бесплатные видео
+                    a(href="#").nav__link Вопрос/Ответ
+            button.nav__button Купить курс

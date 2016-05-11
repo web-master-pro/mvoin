@@ -1,0 +1,104 @@
+include ../blocks/header/header
+include ../blocks/browsehappy/browsehappy
+include ../blocks/s-povestka/s-povestka
+include ../blocks/s-reasons/s-reasons
+include ../blocks/s-kurs/s-kurs
+include ../blocks/s-steps/s-steps
+include ../blocks/s-advantages/s-advantages
+include ../blocks/s-author/s-author
+include ../blocks/s-team/s-team
+include ../blocks/s-themes/s-themes
+include ../blocks/s-chance/s-chance
+include ../blocks/s-feedbacks/s-feedbacks
+include ../blocks/s-faq/s-faq
+include ../blocks/s-appeal/s-appeal
+include ../blocks/footer/footer
+include ../blocks/popups/popups
+
+// ========================================================== 
+// Верстка сайта: http://web-master-pro.ru 
+// ========================================================== 
+
+doctype html
+
+html(lang="ru-RU")
+
+    head
+        meta(charset="utf-8")
+        title Мирный воин
+
+        script.
+            !function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="assets/css/fonts.min.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();
+
+        style
+            include ../tmp/fs-style.min.css
+
+        noscript
+            link(rel="stylesheet" href="assets/css/fonts.min.css?rev=@@hash")
+            link(rel="stylesheet" href="assets/css/style.min.css?rev=@@hash")
+
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+        meta(name="generator" content="web-master-pro.ru")
+
+        link(rel="apple-touch-icon", sizes="57x57", href="assets/img/favicons/apple-touch-icon-57x57.png")
+        link(rel="apple-touch-icon", sizes="60x60", href="assets/img/favicons/apple-touch-icon-60x60.png")
+        link(rel="apple-touch-icon", sizes="72x72", href="assets/img/favicons/apple-touch-icon-72x72.png")
+        link(rel="apple-touch-icon", sizes="76x76", href="assets/img/favicons/apple-touch-icon-76x76.png")
+        link(rel="apple-touch-icon", sizes="114x114", href="assets/img/favicons/apple-touch-icon-114x114.png")
+        link(rel="apple-touch-icon", sizes="120x120", href="assets/img/favicons/apple-touch-icon-120x120.png")
+        link(rel="apple-touch-icon", sizes="144x144", href="assets/img/favicons/apple-touch-icon-144x144.png")
+        link(rel="apple-touch-icon", sizes="152x152", href="assets/img/favicons/apple-touch-icon-152x152.png")
+        link(rel="apple-touch-icon", sizes="180x180", href="assets/img/favicons/apple-touch-icon-180x180.png")
+        link(rel="icon", type="image/png", href="assets/img/favicons/favicon-32x32.png", sizes="32x32")
+        link(rel="icon", type="image/png", href="assets/img/favicons/android-chrome-192x192.png", sizes="192x192")
+        link(rel="icon", type="image/png", href="assets/img/favicons/favicon-96x96.png", sizes="96x96")
+        link(rel="icon", type="image/png", href="assets/img/favicons/favicon-16x16.png", sizes="16x16")
+        link(rel="manifest", href="assets/img/favicons/manifest.json")
+        link(rel="mask-icon", href="assets/img/favicons/safari-pinned-tab.svg", color="#ffea00")
+        link(rel="shortcut icon", href="assets/img/favicons/favicon.ico")
+        meta(name="apple-mobile-web-app-title", content="Мирный воин")
+        meta(name="application-name", content="Мирный воин")
+        meta(name="msapplication-TileColor", content="#da532c")
+        meta(name="msapplication-TileImage", content="assets/img/favicons/mstile-144x144.png")
+        meta(name="msapplication-config", content="assets/img/favicons/browserconfig.xml")
+        meta(name="theme-color", content="#ffffff")
+
+    body.page
+        .page__content
+            +browsehappy()
+            +header()
+            +s-povestka()
+            +s-reasons()
+            +s-kurs()
+            +s-steps()
+            +s-advantages()
+            +s-author()
+            +s-team()
+            +s-themes()
+            +s-chance()
+            +s-feedbacks()
+            +s-faq()
+            +s-appeal()
+            +footer()
+
+        .hidden
+            +form-order()
+            +popup-thankyou()
+            +popup-privacy()
+
+        script.
+            var ms=document.createElement("link");ms.rel="stylesheet";ms.href="assets/css/style.min.css?rev=@@hash";document.getElementsByTagName("head")[0].appendChild(ms);
+
+        <!--[if lt IE 9]>
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js")
+        <![endif]-->
+
+        //- include inc/metrika.html
+
+        script(src="https://code.jquery.com/jquery-2.2.3.min.js")
+        script window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')
+        script(src="assets/js/plugins.min.js?rev=@@hash")
+        script(src="assets/js/main.min.js?rev=@@hash")

@@ -1,0 +1,30 @@
+{
+  "name": "MVoin",
+  "authors": [
+    "Alexey Dobrov <mail@web-master-pro.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "normalize-css": "normalize.css#^4.0.0",
+    "magnific-popup": "^1.1.0",
+    "jquery-validation": "^1.15.0",
+    "jquery.maskedinput": "^1.4.1",
+    "smoothscroll-for-websites": "^1.4.4",
+    "wow": "wowjs#^1.1.2",
+    "animate.css": "animate-css#^3.5.1",
+    "device.js": "^0.0.3"
+  }
+}
