@@ -21,32 +21,28 @@ font(face = Regular)
         font-family "RussoOneRegular", sans-serif
         font-weight 400
 
-button(bgcolor = blue)
+button()
     display block
     width 100%
-    max-width 278px
-    height 60px
-    if bgcolor == blue
-        background-color #004c9d
-    if bgcolor == green
-        background-color #156500
+    max-width 280px
+    height 61px
+    background-color #ffea00
+    background-image linear-gradient(to top, transparent 0%, rgba(255, 255, 255, 0.16) 100%)
     border none
-    color white
-    font(Bold)
-    font-size 20px
+    border-top 3px solid transparent
+    border-bottom 3px solid #b8a900
+    color black
+    font(Russo)
+    font-size 17px
+    font-weight 400
     line-height 1
-    letter-spacing: 0.05em
-    text-transform uppercase
     text-align center
-    text-decoration none
-    outline: none
+    padding 0 20px
+    text-transform uppercase
+    transition all .5s ease
+    position relative
+    margin -3px auto 0
     cursor pointer
-    transition all 0.3s ease
-
     &:hover
-        color @color
-        text-decoration none
-        if bgcolor == blue
-            background-color #0069d9
-        if bgcolor == green
-            background-color lighten(#156500, 15%)
+        background-color #ffec1b
+        background-image none

@@ -1,0 +1,68 @@
+.s-kurs
+    background: #fff url(img/s-kurs-bg.jpg) no-repeat center top
+    min-height 845px
+    +below(1000px)
+        background #fff
+
+    &__in
+        container(1040px)
+        padding 0 20px
+
+    &__cover
+        display none
+        +below(1000px)
+            display block
+            width 100%
+            height auto
+            margin 0 auto
+
+    &__content
+        padding 120px 0 70px 560px
+        +below(1100px)
+            padding-left 520px
+        +below(1000px)
+            padding 0 0 70px
+            text-align center
+
+    &__title
+        color black
+        font(Extra)
+        font-size 32px
+        line-height 1.4
+        margin 0 0 35px
+        +below(480px)
+            font-size 28px
+            line-height 1.2
+
+    &__text
+        color #000
+        font()
+        font-size 24px
+        line-height 1.2
+        margin 0 0 40px
+        &--bold
+            font(Extra)
+        strong
+            font(Bold)
+        +below(480px)
+            font-size 20px
+            margin-bottom 30px
+
+    &__button-block
+        display inline-block
+        width 100%
+        max-width 280px
+        margin 50px 0 0
+        +below(480px)
+            margin-top 20px
+
+    &__button
+        button()
+
+    &__subbutton
+        color #b8b8b8
+        font()
+        font-size 14px
+        line-height 1
+        text-align center
+        margin 15px 0 0

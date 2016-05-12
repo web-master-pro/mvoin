@@ -89,27 +89,8 @@
                 font-size 24px
 
     &__button
-        display block
-        width 100%
-        max-width 320px
-        height 59px
-        background-color #ffea00
-        background-image linear-gradient(to top, transparent 0%, rgba(255, 255, 255, 0.16) 100%)
-        border none
-        border-top 3px solid transparent
-        border-bottom 3px solid #b8a900
-        color black
-        font(Russo)
-        font-size 17px
-        font-weight 400
-        line-height 1
-        text-align center
-        padding 0 20px 0 60px
-        text-transform uppercase
-        transition all .5s ease
-        margin 0 auto 15px
-        position relative
-        cursor pointer
+        button()
+        padding-left 60px
         &::before
             content ""
             sprite($icon_video)
@@ -118,9 +99,6 @@
             left 45px
             +below(480px)
                 left 30px
-        &:hover
-            background-color #ffec1b
-            background-image none
 
     &__subbutton
         color #ffea00
@@ -129,4 +107,4 @@
         line-height 1
         text-transform lowercase
         text-align center
-        margin 0
+        margin 15px 0 0
