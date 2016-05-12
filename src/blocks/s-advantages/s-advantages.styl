@@ -1,0 +1,111 @@
+.s-advantages
+    background #e9f0ef url(img/s-advantages-bg.jpg) no-repeat center center
+    background-size cover
+
+    &__in
+        container(1280px)
+        padding 85px 0 65px
+        +below(768px)
+            padding-left 20px
+            padding-right 20px
+
+    &__title
+        color black
+        font(Russo)
+        font-size 50px
+        line-height 1
+        text-align center
+        margin 0 0 85px
+        +below(768px)
+            font-size 44px
+        +below(480px)
+            font-size 34px
+            margin-bottom 60px
+
+    &__list
+        display block
+        list-style: none
+        font-size 0
+        text-align center
+        padding 0
+        margin 0 0 30px
+
+    &__button-block
+        display block
+        max-width 280px
+        margin 0 auto
+
+    &__button
+        button()
+
+    &__subbutton
+        color #ececee
+        font()
+        font-size 14px
+        line-height 1
+        text-align center
+        margin 15px 0 0
+
+.advantage
+    display inline-block
+    vertical-align: top
+    width 100%
+    max-width 305px
+    background-color #fff
+    margin 0 30px 60px
+    +below(1280px)
+        margin 0 10px 50px
+    +below(480px)
+        margin-left auto
+        margin-right auto
+    &:hover
+        box-shadow 0 0 25px rgba(0, 0, 0, 0.3)
+
+
+    &__title
+        display block
+        width 100%
+        min-height 85px
+        color #fcee0f
+        font(Extra)
+        font-size 18px
+        line-height 1.5
+        text-align center
+        text-transform uppercase
+        padding 17px 20px 15px
+        background-size cover !important
+        margin 0
+        +below(480px)
+            font-size 17px
+
+    &:nth-child(odd) &__title
+        background #242429 url(img/s-advantages-item-1-bg.jpg) no-repeat center center
+    &:nth-child(even) &__title
+        background #242429 url(img/s-advantages-item-2-bg.jpg) no-repeat center center
+
+    &__list
+        display block
+        list-style none
+        padding 10px 20px 20px
+        margin 0
+
+    &__item
+        color black
+        font()
+        font-size 20px
+        line-height 1.5
+        text-align left
+        padding 25px 0px 25px 25px
+        border-bottom 1px solid #e5e5e7
+        position relative
+        margin 0
+        +below(480px)
+            font-size 18px
+        &:last-child
+            border-bottom none
+        &::before
+            content ""
+            sprite($icon_star_red)
+            position absolute
+            top 32px
+            left -2px
