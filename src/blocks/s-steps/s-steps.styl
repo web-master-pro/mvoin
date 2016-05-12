@@ -1,0 +1,121 @@
+.s-steps
+    background #f7f7f7 url(img/s-steps-bg.jpg) no-repeat center top
+    position: relative
+
+    &__in
+        container(1000px)
+        padding 95px 20px 50px
+        height 650px
+        +below(700px)
+            padding-top 70px
+            height auto
+
+    &__title
+        color black
+        font(Russo)
+        font-size 50px
+        line-height 1
+        text-align center
+        margin 0 0 230px
+        +below(700px)
+            margin-bottom 70px
+            font-size 40px
+
+    &__list
+        display block
+        width 100%
+        min-height 152px
+        list-style: none
+        padding 0
+        margin 0
+        position relative
+
+    &__item
+        display inline-block
+        color black
+        font(Bold)
+        font-size 20px
+        line-height 1
+        padding 0 0 0 35px
+        position absolute
+        margin 0
+        &::before
+            display block
+            width 30px
+            height 40px
+            background-color #fcee0f
+            font(Bold)
+            font-size 20px
+            line-height 1
+            padding 10px 0 0 14px
+            position absolute
+            top -10px
+            left 0
+
+        &:nth-child(1)
+            top 10px
+            left 0
+            &::before
+                content "1."
+
+        &:nth-child(2)
+            bottom 10px
+            left 50%
+            transform translateX(-50%)
+            &::before
+                content "2."
+
+        &:nth-child(3)
+            top 10px
+            right 0
+            &::before
+                content "3."
+
+        +below(700px)
+            font-size 17px
+            &::before
+                font-size 17px
+            &:nth-child(1)
+            &:nth-child(2)
+            &:nth-child(3)
+                display block
+                width 100%
+                max-width 320px
+                position relative
+                top auto
+                bottom auto
+                left auto
+                right auto
+                transform translateX(0%)
+                margin 0 auto 50px
+
+    &__step-1
+        sprite($icon_step_1)
+        position absolute
+        top 240px
+        left 200px
+        +below(1000px)
+            left 120px
+        +below(700px)
+            display none
+
+    &__step-2
+        sprite($icon_step_2)
+        position absolute
+        top 360px
+        left 50%
+        transform translateX(-50%)
+        +below(1000px)
+            transform translateX(-60%)
+        +below(700px)
+            display none
+
+    &__step-3
+        sprite($icon_step_3)
+        position absolute
+        top 250px
+        right 175px
+        +below(1000px)
+            right 120px
+        +below(700px)
+            display none
