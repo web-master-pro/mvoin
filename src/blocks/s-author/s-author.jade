@@ -1,29 +1,30 @@
 mixin s-author(addclass)
     section.s-author(class= addclass)#author
         .s-author__in
-            .s-author__left
-                ul.s-author__gallery
-                    li.s-author__gallery-item
-                        a(href="assets/img/gallery/gallery-1.jpg").s-author__gallery-link.js-author-gallery
-                            img(src="assets/img/gallery/gallery-1-mini.jpg" alt="").s-author__gallery-img
-                    li.s-author__gallery-item
-                        a(href="assets/img/gallery/gallery-2.jpg").s-author__gallery-link.js-author-gallery
-                            img(src="assets/img/gallery/gallery-2-mini.jpg" alt="").s-author__gallery-img
-                    li.s-author__gallery-item
-                        a(href="assets/img/gallery/gallery-3.jpg").s-author__gallery-link.js-author-gallery
-                            img(src="assets/img/gallery/gallery-3-mini.jpg" alt="").s-author__gallery-img
-                    li.s-author__gallery-item
-                        a(href="assets/img/gallery/gallery-4.jpg").s-author__gallery-link.js-author-gallery
-                            img(src="assets/img/gallery/gallery-4-mini.jpg" alt="").s-author__gallery-img
-                    li.s-author__gallery-item
-                        a(href="assets/img/gallery/gallery-5.jpg").s-author__gallery-link.js-author-gallery
-                            img(src="assets/img/gallery/gallery-5-mini.jpg" alt="").s-author__gallery-img
-
-            .s-author__right
+            .s-author__top
                 p.s-author__pretitle Автор курса
                 h2.s-author__title Талгат <strong>Юнусов</strong>
-                
-                h3.s-author__headline Основатель Службы помощи призывникам <strong>«Мирный воин»</strong>
+                img(src="assets/img/s-author-photo.jpg" width="770" height="867" alt="Талгат Юнусов").s-author__photo
+
+            ul.s-author__gallery
+                li.s-author__gallery-item
+                    img(src="assets/img/gallery/gallery-1-mini.jpg" width="112" height="87" alt="").s-author__gallery-img
+                    a(href="assets/img/gallery/gallery-1.jpg").s-author__gallery-link.js-author-gallery
+                li.s-author__gallery-item
+                    img(src="assets/img/gallery/gallery-2-mini.jpg" width="112" height="87" alt="").s-author__gallery-img
+                    a(href="assets/img/gallery/gallery-2.jpg").s-author__gallery-link.js-author-gallery
+                li.s-author__gallery-item
+                    img(src="assets/img/gallery/gallery-3-mini.jpg" width="112" height="87" alt="").s-author__gallery-img
+                    a(href="assets/img/gallery/gallery-3.jpg").s-author__gallery-link.js-author-gallery
+                li.s-author__gallery-item
+                    img(src="assets/img/gallery/gallery-4-mini.jpg" width="112" height="87" alt="").s-author__gallery-img
+                    a(href="assets/img/gallery/gallery-4.jpg").s-author__gallery-link.js-author-gallery
+                li.s-author__gallery-item
+                    img(src="assets/img/gallery/gallery-5-mini.jpg" width="112" height="87" alt="").s-author__gallery-img
+                    a(href="assets/img/gallery/gallery-5.jpg").s-author__gallery-link.js-author-gallery
+
+            .s-author__content
+                h3.s-author__headline Основатель Службы помощи <br>призывникам <strong>«Мирный воин»</strong>
                 ul.s-author__list.s-author__list--red
                     li.s-author__item 7 филиалов по всей России
                     li.s-author__item 5 лет успешной практики
@@ -37,6 +38,8 @@ mixin s-author(addclass)
 
                 ul.s-author__videos
                     li.s-author__videos-item
-                        a(href="#").s-author__videos-link Смотреть мастер-класс Талгата Юнусова «5 способов получить военный билет»
+                        a(href="#").s-author__videos-link Смотреть мастер-класс Талгата Юнусова «5&nbsp;способов получить военный билет»
                     li.s-author__videos-item
                         a(href="#").s-author__videos-link Первый канал в гостях у Талгата Юнусова
+
+        img(src="assets/img/flask.png" width="880" height="931" alt="").s-author__flask
