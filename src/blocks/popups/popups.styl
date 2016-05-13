@@ -39,7 +39,7 @@
         margin 0 auto
         +below(800px)
             max-width 170px
-        
+
 
 .popup-thankyou
     display block
@@ -83,6 +83,8 @@
     padding 70px 80px 50px
     position relative
     margin 20px auto
+    +below(480px)
+        padding 80px 20px 40px
 
     &__content
         display block
@@ -97,18 +99,20 @@
             font-size 16px
 
         h2
-            color #003874
-            font(Bold)
+            color #000
+            font(Russo)
             font-size 30px
             line-height 1
             text-align center
             text-transform uppercase
-            margin 0 auto 50px
+            margin 0 auto 40px
             +below(480px)
                 font-size 22px
+            +below(400px)
+                font-size 20px
 
         h3
-            color #003874
+            color #000
             font-size 24px
             font(Bold)
             line-height 1
@@ -122,7 +126,7 @@
             margin 0 0 20px
 
         a
-            color #003874
+            color #002aff
             text-decoration: underline
             &:hover
                 color @color
@@ -131,24 +135,23 @@
 .popup
     .mfp-close
         display block
-        width 35px
-        height 35px
-        background-color #004c9d
-        color #fff
-        font(Thin)
-        font-size 35px
-        line-height 35px
+        width 25px
+        height 25px
+        background none
+        color #cecece
+        font()
+        font-size 70px
+        line-height 23px
         text-align center
         border none
-        padding 2px 0 0
+        padding 0
         position absolute
-        opacity 0.2
-        top 0px
-        right 0px
-        transition opacity 0.3s ease
+        opacity 1
+        top 30px
+        right 35px
+        transition color 0.3s ease
         &:hover
-            color #fff
-            opacity 0.8
+            color #000
             text-shadow none
 
 
