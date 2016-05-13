@@ -1,0 +1,102 @@
+.s-faq
+    background #ebf2fb url(img/s-faq-bg.jpg) no-repeat center center
+    background-size cover
+
+    &__in
+        container(1040px)
+        padding 90px 20px
+        min-height 1154px
+        +below(480px)
+            padding 60px 20px
+
+    &__title
+        color black
+        font(Russo)
+        font-size 40px
+        line-height 1.5
+        text-align center
+        margin 0 0 70px
+        +below(768px)
+            font-size 34px
+            line-height 1.2
+        +below(480px)
+            font-size 28px
+            margin-bottom 40px
+
+    &__list
+        display block
+        width 100%
+        list-style none
+        padding 0
+        margin 0
+
+    &__item
+        display block
+        width 100%
+        padding 0
+        margin 0 0 20px
+        &:last-child
+            margin-bottom 0
+
+    &__question
+        display block
+        width 100%
+        background-color #ffea00
+        padding 20px 100px 20px 59px
+        text-decoration none
+        position relative
+        transition all .5s ease
+        &:hover
+            background-color #fff155
+            text-decoration none
+        &::after
+            content ""
+            sprite($icon_target)
+            position absolute
+            top 50%
+            transform translateY(-50%)
+            right 34px
+        +below(1000px)
+            padding-left 30px
+        +below(480px)
+            padding-right 20px
+            padding-left 20px
+            &::after
+                display none
+
+    &__question-title
+        color black
+        font(Extra)
+        font-size 24px
+        line-height 1.2
+        margin 0
+        +below(768px)
+            font-size 20px
+        +below(480px)
+            font-size 18px
+
+    &__answer
+        display none
+        width 100%
+        background-color #fff
+        padding 30px 50px 10px 59px
+        +below(1000px)
+            padding-left 30px
+            padding-right 30px
+        +below(480px)
+            padding-right 20px
+            padding-left 20px
+
+        p
+            color black
+            font(Bold)
+            font-size 18px
+            line-height 1.6
+            margin 0 0 20px
+            +below(768px)
+                font-size 16px
+
+    &__item.expanded &__question
+        background-color #fff155
+    // &__item.expanded &__answer
+    //     display block
