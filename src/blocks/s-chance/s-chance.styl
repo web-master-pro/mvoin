@@ -1,0 +1,96 @@
+.s-chance
+    background #222 url(img/s-chance-bg.jpg) no-repeat center center
+    background-size cover
+
+    &__in
+        container(1080px)
+        padding 105px 20px 55px
+        +below(480px)
+            padding-top 60px
+
+    &__title
+        color white
+        font(Russo)
+        font-size 50px
+        line-height 1
+        text-align center
+        margin 0 0 80px
+        +below(480px)
+            font-size 34px
+            margin-bottom 60px
+
+    &__list
+        display block
+        height 590px
+        list-style none
+        font-size 0
+        padding 0
+        margin 0
+        position: relative;
+        +below(1000px)
+            height auto
+            text-align center
+
+    &__item
+        display inline-block
+        vertical-align top
+        max-width 405px
+        min-height 250px
+        background-color #ffea00
+        text-align left
+        padding 35px 30px 20px 35px
+        margin 0
+        position absolute
+        &::before
+            content ""
+            border 3px solid #fff
+            position absolute
+            top -15px
+            bottom -15px
+            left 15px
+            right 15px
+        &:nth-child(1)
+            top 0
+            left 20px
+        &:nth-child(2)
+            top 0
+            left 520px
+        &:nth-child(3)
+            bottom 0
+            right 520px
+        &:nth-child(4)
+            bottom 0
+            right 20px
+        +below(1000px)
+            position relative
+            margin 0 20px 80px
+            &:nth-child(1)
+            &:nth-child(2)
+            &:nth-child(3)
+            &:nth-child(4)
+                top auto
+                bottom auto
+                left auto
+                right auto
+        +below(768px)
+            margin 0 auto 70px
+        +below(480px)
+            min-height 220px
+
+    &__item-title
+        color black
+        font(Extra)
+        font-size 40px
+        line-height 1
+        margin 0 0 20px
+        +below(480px)
+            font-size 30px
+
+    &__item-text
+        color black
+        font(Bold)
+        font-size 20px
+        line-height 1.5
+        margin 0
+        +below(480px)
+            font-size 18px
