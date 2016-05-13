@@ -2,9 +2,14 @@ mixin s-team(addclass)
     section.s-team(class= addclass)#team
         .s-team__in
             h2.s-team__title <strong>Можно нанять целую команду</strong> <br>из консультантов, врачей, юристов, которые будут отстаивать твои права перед военкоматом.
+            img(src="assets/img/s-team-experts.png" width="597" height="384" alt="").s-team__experts
             p.s-team__expensive Это стоит очень дорого.
-            p.s-team__solution <strong>Выход - заказать видеокурс</strong> <br>всего <span class="s-team__solution--price">3500 рублей</span>
+            .s-team__solution
+                p.s-team__solution-text <strong>Выход - заказать видеокурс</strong> <br>всего <span>3500 рублей</span>
+                .s-team__solution-info !
+                .s-team__solution-popup Это в 100 раз меньше суммы, которую ты сможешь с легкостью заработать за год. <br><strong>Но за год в армии ты не заработаешь ни копейки.</strong>
+
             p.s-team__effect Эффект видеокурса равен эффекту команды специалистов. Следуй инструкции, и у тебя все получится!
-            .s-team__guaranty
-                h3.s-team__guaranty-title Гарантия
-                p.s-team__guaranty-text Если информация из видеокурса покажется тебе неактуальной и не принесет пользы, мы вернем полную стоимость
+            .s-team__guarantee
+                h3.s-team__guarantee-title Гарантия
+                p.s-team__guarantee-text Если информация из видеокурса покажется тебе неактуальной и не принесет пользы, мы вернем полную стоимость

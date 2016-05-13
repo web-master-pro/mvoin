@@ -27,7 +27,6 @@
 //= ../bower/jquery-validation/dist/jquery.validate.js
 //= ../bower/jquery.maskedinput/dist/jquery.maskedinput.js
 //= ../bower/magnific-popup/dist/jquery.magnific-popup.js
-//= ../bower/slick-carousel/slick/slick.min.js
 //= ../bower/page-scroll-to-id/jquery.malihu.PageScroll2id.js
 //= ../bower/smoothscroll-for-websites/SmoothScroll.js
 //= ../bower/wow/dist/wow.js

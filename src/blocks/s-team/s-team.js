@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $(".s-team__solution-info")
+        .mouseenter(function(){
+            $(".s-team__solution-popup").fadeIn(500);
+        })
+        .mouseleave(function(){
+            $(".s-team__solution-popup").fadeOut(500);
+        })
+});

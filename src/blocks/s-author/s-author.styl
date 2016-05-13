@@ -130,7 +130,7 @@
             left auto
             right 20px
         +below(1040px)
-            width 580px
+            max-width 580px
         +below(1000px)
             max-width 575px
             top auto
@@ -214,8 +214,8 @@
             top 50%
             transform translateY(-50%)
             left 0
-        +below(1000px)
-            padding-left 40px
+        span
+            display none
 
     &__videos-link
         color #1e499d
@@ -225,6 +225,7 @@
         text-decoration underline
         &:hover
             text-decoration none
+
 
     &__flask
         display block

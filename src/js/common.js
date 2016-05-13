@@ -1,11 +1,20 @@
 $(document).ready(function() {
 
-    $(".js-scrollto").click(function () {
+    $(".js-scrollto, .nav__menu-link").click(function () {
         elementClick = $(this).attr("href")
-        destination = $(elementClick).offset().top;
+        destination = $(elementClick).offset().top - 70;
         $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1700);
         return false;
     });
+
+    $('.js-popup-youtube').magnificPopup({
+        disableOn: 100,
+        type: 'iframe',
+        removalDelay: 500,
+        mainClass: 'mfp-zoom-in',
+        preloader: false,
+        fixedContentPos: false
+	});
 
     $('.js-phone-field').mask('+7 (999) 999-99-99');
 
@@ -18,7 +27,6 @@ $(document).ready(function() {
     };
 
     $("img, a").on("dragstart", function(event) { event.preventDefault(); });
-
 
     var wow = new WOW({
         boxClass:     'wow',      // animated element css class (default is wow)
