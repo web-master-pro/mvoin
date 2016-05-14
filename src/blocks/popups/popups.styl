@@ -40,7 +40,6 @@
         +below(800px)
             max-width 170px
 
-
 .popup-thankyou
     display block
     max-width 400px
@@ -71,6 +70,110 @@
     &__button
         button()
         height 50px
+        margin 0 auto
+
+
+.popup-video
+    display block
+    width 100%
+    height auto
+    max-width 960px
+    min-height 540px
+    background-color white
+    box-shadow 0 0 50px rgba(0, 0, 0, 0.5)
+    padding 50px 35px 33px 35px
+    position relative
+    margin 20px auto
+    +below(1000px)
+        padding-top 90px
+    +below(480px)
+        padding 90px 20px 30px
+
+    &__title
+        color black
+        font(Russo)
+        font-size 24px
+        line-height 1
+        text-align left
+        margin 0 0 30px
+        +below(1000px)
+            text-align center
+        +below(480px)
+            font-size 20px
+            margin-bottom 40px
+
+    &__content
+        margin 0 0 45px
+        display flex
+        flex-flow row nowrap
+        justify-content space-between
+        +below(1000px)
+            flex-flow column nowrap
+            align-items center
+
+    &__video
+        width 100%
+        max-width 570px
+        +below(1000px)
+            margin 0 auto 40px
+        +below(700px)
+            max-width 400px
+            height 225px
+        +below(480px)
+            max-width 280px
+            height 158px
+        +below(460px)
+            max-width 240px
+            height 135px
+
+
+    &__aside
+        width 100%
+        max-width 290px
+        position relative
+        +below(1000px)
+            max-width: 570px
+            height 200px
+
+    &__aside-title
+        color black
+        font(Bold)
+        font-size 18px
+        line-height 1
+        margin 3px 0 30px
+        +below(1000px)
+            text-align center
+
+    &__textarea
+        width 100%
+        border 1px solid #ebebeb
+        border-radius 3px
+        padding 10px
+        color black
+        font()
+        font-size 15px
+        line-height 1.5
+        resize: none;
+        position absolute
+        top 50px
+        left 0
+        right 0
+        bottom 0
+
+    &__placeholder
+        color silver
+        font()
+        font-size 15px
+        line-height 1.5
+        position absolute
+        top 70px
+        left 20px
+        max-width 230px
+        margin 0
+
+    &__button
+        button()
+        max-width 400px
         margin 0 auto
 
 .popup-order

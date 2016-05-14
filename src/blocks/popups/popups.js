@@ -17,6 +17,21 @@ $(document).ready(function(){
         overflowY: 'scroll'
     });
 
+    $(".popup-video__textarea")
+        .focus(function() {
+            $(this).next(".popup-video__placeholder").fadeOut(300);
+        })
+        .blur(function() {
+            if ($(this).val().length == 0) {
+                $(this).next(".popup-video__placeholder").fadeIn(300);
+            }
+        });
+
+    $(".popup-video__placeholder").click(function(){
+        $(this).fadeOut(300);
+        $(this).prev(".popup-video__textarea").focus();
+    })
+
     $(".popup-order__button").on("click", function(){
         var res = true;
         if (!$("#popup-order-checkbox-1").is(':checked')) {
