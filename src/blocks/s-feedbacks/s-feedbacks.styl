@@ -1,0 +1,104 @@
+.s-feedbacks
+    background-color #fff
+
+    &__in
+        container(1120px)
+        padding 105px 20px 20px
+
+    &__title
+        color black
+        font(Russo)
+        font-size 50px
+        line-height 1
+        text-align center
+        margin 0 0 90px
+        +below(480px)
+            font-size 38px
+
+    &__videos
+        display flex
+        flex-flow: row wrap
+        justify-content space-around
+        list-style none
+        padding 0
+        margin 0
+
+    &__video
+        display none
+        width 280px
+        margin 0 0 75px
+        flex 0 0 auto
+
+    &__video-title
+        color black
+        font(Russo)
+        font-size 24px
+        line-height 1
+        margin 0 0 17px
+
+    &__video-link
+        display block
+        width 280px
+        height 190px
+        position relative
+
+    &__video-img
+        display block
+        width 280px
+        height 190px
+        opacity .7
+        position absolute
+        transition opacity .5s ease
+
+    &__video-link:hover &__video-img
+        opacity 1
+
+    &__video-overlay
+        display block
+        width 280px
+        height 190px
+        position absolute
+        &::before
+            content ""
+            sprite($icon_video_play)
+            position absolute
+            top 50%
+            left 50%
+            transform translate(-50%,-50%)
+
+    &__button-more
+        display block
+        width 180px
+        height 27px
+        background none
+        border none
+        color #1e499d
+        font()
+        font-size 18px
+        line-height 1
+        text-align left
+        text-decoration underline
+        padding-left 47px
+        position relative
+        margin -15px auto 75px
+        cursor pointer
+        &::before
+            content ""
+            sprite($icon_load_more)
+            position absolute
+            top 0
+            left 0
+        &:hover
+            text-decoration none
+            &::before
+                animation spin .4s linear
+                // animation-iteration-count infinite
+
+    span
+        display none
+
+@keyframes spin
+    0%
+        transform rotate(0deg)
+    100%
+        transform rotate(179deg)
