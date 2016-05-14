@@ -2,45 +2,111 @@ mixin s-themes(addclass)
     section.s-themes(class= addclass)#themes
         .s-themes__in
             h2.s-themes__title Темы курса
-            p.s-themes__subtitle Посмотрите <em>первые 3 видео</em> бесплатно!
+            p.s-themes__subtitle Посмотрите <em>первые 3&nbsp;видео</em> бесплатно!
             
             .contents.s-themes__contents
                 ul.contents__pages
-                    li.contents__page
+                    li.contents__page.active
                         h3.contents__page-title 1. Введение
                         ol.contents__videos
-                            li.contents__video 1
-                                a.contents__video-link Права и обязанности призывников
-                            li.contents__video 2
-                                a.contents__video-link Моя история
-                            li.contents__video 3
-                                a.contents__video-link Как откосить от армии
-                            li.contents__video.contents__video--disabled 4
-                                a.contents__video-link Сколько стоит военный билет
-                            li.contents__video.contents__video--disabled 5
-                                a.contents__video-link Пришла повестка
-                            li.contents__video.contents__video--disabled 6
-                                a.contents__video-link Призыв на военную службу. Весенний и осенний
+                            li.contents__video
+                                a(href="#popup-video-1").contents__video-link.js-popup Права и обязанности призывников
+                                p.contents__free Бесплатно!
+                            li.contents__video
+                                a(href="#popup-video-2").contents__video-link.js-popup Моя история
+                                p.contents__free Бесплатно!
+                            li.contents__video
+                                a(href="#popup-video-3").contents__video-link.js-popup Как откосить от армии
+                                p.contents__free Бесплатно!
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Сколько стоит военный билет
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Пришла повестка
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Призыв на военную службу. Весенний и осенний
+                    li.contents__page
+                        h3.contents__page-title 2. Диагностика
+                        ol.contents__videos
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Расписания болезней
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Категория годности
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Анализ состояния здоровья
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Моя история. Кейсы.
+                    li.contents__page
+                        h3.contents__page-title 3. Обследование
+                        ol.contents__videos
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Подготовка
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Перепроверка
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Моя история
+                    li.contents__page
+                        h3.contents__page-title 4. Подтверждение в военкомате
+                        ol.contents__videos
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Медкомиссия в военкомате. Кейсы
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Заполнение акта
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Жалоба на военкомат
+                    li.contents__page
+                        h3.contents__page-title 5. КМО
+                        ol.contents__videos
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Подготовка
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Дополнительное обследование
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Документы на получение ВБ
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Силовой призыв
+                    li.contents__page
+                        h3.contents__page-title 6. Отсрочка
+                        ol.contents__videos
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup По здоровью
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup По обучению
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Отсрочка от армии
+                    li.contents__page
+                        h3.contents__page-title 7. Дополнительно
+                        ol.contents__videos
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Военный билет 27
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Первоначальная постановка на воинский учет
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup АГС
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Получение загранпаспорта
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Статьи в военнике. Часто задаваемые вопросы
+                            li.contents__video.contents__video--disabled
+                                a(href="#popup-order").contents__video-link.js-popup Новые правила в спорах
 
                 ol.contents__tabs
-                    li.contents__tab
-                        a(href="#").contents__tab-link 1. Введение
-                    li.contents__tab
-                        a(href="#").contents__tab-link 2. Диагностика
-                    li.contents__tab
-                        a(href="#").contents__tab-link 3. Обследования
-                    li.contents__tab
-                        a(href="#").contents__tab-link 4. Подтверждение в военкомате
-                    li.contents__tab
-                        a(href="#").contents__tab-link 5. КМО
-                    li.contents__tab
-                        a(href="#").contents__tab-link 6. Отсрочка
-                    li.contents__tab
-                        a(href="#").contents__tab-link 7. Дополнительно
+                    li.contents__tab.active Введение
+                        img(src="assets/img/triangle.png" alt="").contents__tab-tri
+                    li.contents__tab Диагностика
+                        img(src="assets/img/triangle.png" alt="").contents__tab-tri
+                    li.contents__tab Обследования
+                        img(src="assets/img/triangle.png" alt="").contents__tab-tri
+                    li.contents__tab Подтверждение в военкомате
+                        img(src="assets/img/triangle.png" alt="").contents__tab-tri
+                    li.contents__tab КМО
+                        img(src="assets/img/triangle.png" alt="").contents__tab-tri
+                    li.contents__tab Отсрочка
+                        img(src="assets/img/triangle.png" alt="").contents__tab-tri
+                    li.contents__tab Дополнительно
+                        img(src="assets/img/triangle.png" alt="").contents__tab-tri
 
             p.s-themes__text Кто-то защищает страну, кто-то строит экономику. Ты уже выбрал свой путь. Закажи видеокурс Талгата Юнусова и останься на гражданке.
 
             .s-themes__button-block
-                button.s-themes__button Получить полный доступ к курсу
+                button(href="#popup-order").s-themes__button.js-popup Получить полный доступ к&nbsp;курсу
                 p.s-themes__subbutton и начать изучение всех видеоматериалов
-                            

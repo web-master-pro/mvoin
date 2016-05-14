@@ -1,0 +1,313 @@
+.s-themes
+    background url(img/s-themes-bg.jpg) no-repeat center center
+    background-size cover
+
+    &__in
+        container(1040px)
+        padding 75px 20px
+        min-height 1155px
+
+    &__title
+        color black
+        font(Russo)
+        font-size 50px
+        line-height 50px
+        text-align center
+        margin 0 0 33px
+        +below(480px)
+            font-size 38px
+
+    &__subtitle
+        max-width 550px
+        background-color white
+        color black
+        font(Bold)
+        font-size 22px
+        line-height 1
+        text-align center
+        padding 15px
+        margin 0 auto 48px
+        em
+            color #ed1c24
+            font-style normal
+        +below(480px)
+            font-size 18px
+
+    &__contents
+        margin 0 0 110px
+        +below(480px)
+            margin-bottom 40px
+
+    &__text
+        color white
+        font(Extra)
+        font-size 30px
+        line-height 1.5
+        text-align center
+        margin 0 0 47px
+        +below(480px)
+            font-size 22px
+            line-height 1.2
+
+    &__button
+        button()
+        max-width 400px
+        margin 0 auto
+
+    &__subbutton
+        color #ececee
+        font()
+        font-size 14px
+        font-weight 400
+        text-align center
+        margin 15px 0 0
+
+.contents
+    display flex
+    flex-flow row nowrap
+    justify-content space-around
+    width 100%
+    min-height 440px
+    padding 0
+    position relative
+
+    &__pages
+        display block
+        width 100%
+        list-style none
+        flex 0 1 600px
+        padding 0
+        margin 0
+        position relative
+
+    &__tabs
+        display block
+        flex 0 1 370px
+        list-style none
+        padding 0
+        margin 0 0 0 30px
+        +below(1000px)
+            display none
+
+    &__page
+        display none
+        width 100%
+        margin 0 0 10px
+        position absolute
+        &.active
+            display block
+        +below(1000px)
+            display block
+            position relative
+
+    &__page-title
+        display block
+        background-color #ffea00
+        color #010101
+        font(Russo)
+        font-size 24px
+        line-height 1
+        padding 17px 25px 15px 34px
+        margin 0
+        position relative
+        +below(1000px)
+            cursor pointer
+            &::after
+                content ""
+                sprite($icon_target)
+                position absolute
+                top 50%
+                transform translateY(-50%)
+                right 15px
+        +below(480px)
+            font-size 20px
+            padding-left 20px
+
+    &__videos
+        display block
+        width 100%
+        list-style none
+        background-color white
+        box-shadow 0 0 49px rgba(0, 0, 0, 0.16)
+        padding 20px 25px
+        margin 0
+        +below(480px)
+            padding 20px
+
+    +below(1000px)
+        &__page:not(.active) &__videos
+            display none
+        &__page
+            display block !important
+    +above(1001px)
+        &__videos
+            display block !important
+
+    &__video
+        min-height 25px
+        color #1e499d
+        font()
+        font-size 20px
+        line-height 1.2
+        padding 0 100px 0 48px
+        position relative
+        margin 12px 0
+        &::before
+            content ""
+            display inline
+            position relative
+        &::after
+            content ""
+            sprite($icon_video_blue)
+            position absolute
+            left 0
+            top 0
+        &:nth-child(1)
+            &::before
+                content "1. "
+        &:nth-child(2)
+            &::before
+                content "2. "
+        &:nth-child(3)
+            &::before
+                content "3. "
+        &:nth-child(4)
+            &::before
+                content "4. "
+        &:nth-child(5)
+            &::before
+                content "5. "
+        &:nth-child(6)
+            &::before
+                content "6. "
+        &:nth-child(7)
+            &::before
+                content "7. "
+        &:nth-child(8)
+            &::before
+                content "8. "
+        &:nth-child(9)
+            &::before
+                content "9. "
+        +below(480px)
+            font-size 18px
+            padding-left 40px
+            padding-right 80px
+
+    &__free
+        display inline-block
+        background-color #ed1c24
+        color white
+        font()
+        font-size 12px
+        text-transform uppercase
+        padding 5px 7px 4px
+        position absolute
+        top 2px
+        right 0
+        margin 0
+        +below(480px)
+            font-size 10px
+            padding 5px 5px 4px
+
+    &__video-link
+        color #1e499d
+        font()
+        font-size 20px
+        border-bottom 1px dashed #1e499d
+        text-decoration none
+        &:hover
+            text-decoration none
+            border-bottom none
+        +below(480px)
+            font-size 16px
+
+    &__video--disabled &__free
+        display none
+
+    &__video--disabled
+        padding-right 0 !important
+        color #ababab
+        &::after
+            sprite($icon_lock)
+            top 3px
+            left 5px
+    &__video--disabled &__video-link
+        color #ababab
+        border-bottom 1px dashed #ababab
+
+
+    &__tab
+        display block
+        width 100%
+        background-color #ffea00
+        padding 12px 54px 10px 60px
+        color black
+        font(Extra)
+        font-size 24px
+        line-height 1.2
+        text-decoration none
+        position relative
+        transition all .5s ease
+        cursor pointer
+        margin 0 0 10px
+        &:hover
+            background-color #fff155
+            text-decoration none
+        &::before
+            content ""
+            position absolute
+            top 10px
+            left 35px
+        &::after
+            content ""
+            sprite($icon_target)
+            position absolute
+            top 50%
+            transform translateY(-50%)
+            right 15px
+        +below(768px)
+            font-size 20px
+        +below(480px)
+            font-size 18px
+            padding-right 20px
+            padding-left 20px
+            &::after
+                display none
+        &:nth-child(1)
+            &::before
+                content "1."
+        &:nth-child(2)
+            &::before
+                content "2."
+        &:nth-child(3)
+            &::before
+                content "3."
+        &:nth-child(4)
+            &::before
+                content "4."
+        &:nth-child(5)
+            &::before
+                content "5."
+        &:nth-child(6)
+            &::before
+                content "6."
+        &:nth-child(7)
+            &::before
+                content "7."
+        &.active
+            background-color #fff
+            color #b8b8bd
+            &::after
+                opacity .2
+    &__tab-tri
+        display none
+        width 20px
+        height 100%
+        position absolute
+        top 0
+        left -20px
+        bottom 0
+
+    &__tab.active &__tab-tri
+        display block
