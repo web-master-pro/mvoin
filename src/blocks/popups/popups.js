@@ -17,11 +17,31 @@ $(document).ready(function(){
         overflowY: 'scroll'
     });
 
+    $(".popup-order__button").on("click", function(){
+        var res = true;
+        if (!$("#popup-order-checkbox-1").is(':checked')) {
+            $("#popup-order-error-1").fadeIn(500);
+            res = false;
+        };
+        if (!$("#popup-order-checkbox-2").is(':checked')) {
+            $("#popup-order-error-2").fadeIn(500);
+            res = false;
+        };
+        if (res) {
+            document.location.href = "order.php";
+        }
+    })
+
+    $('.popup-order__checkbox').change(function() {
+        if($(this).is(":checked")) {
+            $(this).next().next(".popup-order__error").fadeOut(500);
+        }
+    });
+
     $('.js-order-button').click(function (){
         $.magnificPopup.open({
             items:{
                 src:$('#form-order')
-                // src:$('#popup-thankyou')
             },
             type:'inline',
             midClick: true,
@@ -30,10 +50,10 @@ $(document).ready(function(){
             overflowY: 'scroll',
             fixedContentPos: false,
             callbacks: {
-    			close: function() {
-    				validator.resetForm();
-    			}
-    		}
+                close: function() {
+                    validator.resetForm();
+                }
+            }
         });
 	});
 

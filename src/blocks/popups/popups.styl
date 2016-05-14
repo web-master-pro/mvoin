@@ -73,6 +73,115 @@
         height 50px
         margin 0 auto
 
+.popup-order
+    display block
+    width 100%
+    height auto
+    max-width 780px
+    min-height 789px
+    background-color white
+    box-shadow 0 0 50px rgba(0, 0, 0, 0.5)
+    padding 90px 50px 80px 85px
+    position relative
+    margin 20px auto
+    +below(768px)
+        padding 90px 40px 50px
+    +below(480px)
+        padding 90px 20px 50px
+
+    &__title
+        color black
+        font(Russo)
+        font-size 40px
+        line-height 1
+        text-transform uppercase
+        text-align center
+        margin 0 0 60px
+        +below(480px)
+            font-size 30px
+            margin-bottom 40px
+
+    &__subtitle
+        max-width 450px
+        color black
+        font(Bold)
+        font-size 20px
+        line-height 1.2
+        text-align center
+        margin 0 auto 30px
+
+    &__list
+        display block
+        list-style none
+        padding 0
+        margin 0
+
+    &__item
+        color black
+        font()
+        font-size 16px
+        line-height 1.5
+        padding 0
+        margin 0 0 30px
+        strong
+            font(Bold)
+        a
+            color #003cff
+            text-decoration underline
+            &:hover
+                text-decoration none
+
+    &__checkbox-block
+        display block
+        max-width 410px
+        margin 0 auto
+
+    &__checkbox
+        display block
+        padding 0
+        margin 0
+        opacity 0
+
+    &__checkbox + &__checkbox-label
+        display block
+        min-height 28px
+        color black
+        font()
+        font-size 16px
+        font-weight 400
+        text-align left
+        cursor pointer
+        padding 7px 0 0 40px
+        margin 0 0 0px
+        position relative
+        &::before
+            content ""
+            sprite($icon_checkbox)
+            position absolute
+            top 0
+            left 0
+        a
+            color #003cff
+            text-decoration underline
+            &:hover
+                text-decoration none
+
+    &__checkbox:checked + &__checkbox-label
+        &::before
+            sprite($icon_checkbox_checked)
+
+    &__error
+        display none
+        color red
+        font()
+        font-size 14px
+        line-height 1
+        margin 10px 0 0 40px
+
+    &__button
+        button()
+        margin 60px auto 0
+
 .popup-privacy
     display block
     width 100%

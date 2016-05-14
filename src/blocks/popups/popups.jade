@@ -14,6 +14,27 @@ mixin popup-thankyou(addclass)
         p.popup-thankyou__text Спасибо, что оставили заявку. Мы свяжемся с Вами в самое ближайшее время.
         button.popup-thankyou__button.js-close-button Закрыть
 
+mixin popup-order(addclass)
+    .popup-order.popup#popup-order(class= addclass)
+        h2.popup-order__title Заказать курс
+        h3.popup-order__subtitle Инструкция к курсу «Как получить военный билет самостоятельно»
+        ol.popup-order__list
+            li.popup-order__item <strong>1.</strong> После произведения оплаты вы получаете доступ к материалам на свой e-mail.
+            li.popup-order__item <strong>2.</strong> Если по каким-то причинам письмо не пришло - загляните в папку спама.
+            li.popup-order__item <strong>3.</strong> Если же его и там нет, а вы на 100% уверены, что ваш платёж нам зачислился, то сразу же напишите в нашу службу поддержки <a href="mailto:support@mvoin.ru">support@mvoin.ru</a>
+            li.popup-order__item <strong>4.</strong> Вы защищены 100% гарантией возврата денег на тот случай, если что-то пойдет не так. Гарантия действует 365 дней от момента заказа.
+
+        .popup-order__checkbox-block
+            input(type="checkbox" name="check1").popup-order__checkbox#popup-order-checkbox-1
+            label(for="popup-order-checkbox-1").popup-order__checkbox-label Да, я это прочитал(а) и возражений не имею.
+            p.popup-order__error#popup-order-error-1 Пожалуйста, примите условия заказа
+        .popup-order__checkbox-block
+            input(type="checkbox" name="check2").popup-order__checkbox#popup-order-checkbox-2
+            label(for="popup-order-checkbox-2").popup-order__checkbox-label Я согласен(на) с условиями <a href="/offerta" target="_blank">публичной оферты</a>.
+            p.popup-order__error#popup-order-error-2 Пожалуйста, отметьте согласие с оффертой
+
+        button.popup-order__button ОПЛАТИТЬ КУРС
+
 mixin popup-privacy(addclass)
     .popup-privacy.popup#popup-privacy(class= addclass)
         .popup-privacy__content
