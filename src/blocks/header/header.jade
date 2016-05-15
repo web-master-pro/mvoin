@@ -2,13 +2,20 @@ mixin header(addclass)
     header.header(class= addclass)#header
         .header__in
             .header__logo
-            ul.header__list
+
+            ul.header__list.header__list--desktop
                 li.header__item Без взяток
                 li.header__item Самостоятельно
                 li.header__item С гарантией
-                
+
             h1.header__title Освободись от армии навсегда
             p.header__subtitle Пошаговая инструкция к получению военного билета
+            
+            ul.header__list.header__list--mobile
+                li.header__item Без взяток
+                li.header__item Самостоятельно
+                li.header__item С гарантией
+
             p.header__price Всего <strong>3500</strong> рублей
             button(data-mfp-src="https://www.youtube.com/watch?v=J9AXqGaY__w").header__button.js-popup-youtube Коротко о курсе
             p.header__subbutton видеоприглашение от автора 

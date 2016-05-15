@@ -16,8 +16,6 @@ $(document).ready(function() {
         fixedContentPos: false
 	});
 
-    $('.js-phone-field').mask('+7 (999) 999-99-99');
-
     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
         $('html').addClass('safari');
     };

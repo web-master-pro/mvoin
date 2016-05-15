@@ -8,8 +8,7 @@
         container(1010px)
         padding 75px 20px
         +below(480px)
-            padding 35px 20px
-
+            padding 15px 20px 35px
 
     &__logo
         display block
@@ -17,6 +16,8 @@
         margin 0 auto 65px
         +below(480px)
             margin-bottom 35px
+            transform scale(.6,.6)
+            margin-bottom 15px
 
     &__list
         list-style: none;
@@ -24,6 +25,13 @@
         text-align center
         padding 0
         margin 0 0 15px
+        &--mobile
+            display none
+        +below(480px)
+            &--desktop
+                display none
+            &--mobile
+                display block
 
     &__item
         display inline-block

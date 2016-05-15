@@ -65,7 +65,7 @@ mixin popup-order(addclass)
             label(for="popup-order-checkbox-2").popup-order__checkbox-label Я согласен(на) с условиями <a href="/offerta.html" target="_blank">публичной оферты</a>.
             p.popup-order__error#popup-order-error-2 Пожалуйста, отметьте согласие с оффертой
 
-        button.popup-order__button ОПЛАТИТЬ КУРС
+        button(data-href="http://kurs.mvoin.ru/order").popup-order__button ОПЛАТИТЬ КУРС
 
 mixin popup-privacy(addclass)
     .popup-privacy.popup#popup-privacy(class= addclass)
