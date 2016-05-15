@@ -1,4 +1,6 @@
-include ../blocks/login-box/login-box
+include ../blocks/header-inner/header-inner
+include ../blocks/footer-inner/footer-inner
+include ../blocks/s-videos/s-videos
 include ../blocks/popups/popups
 
 doctype html
@@ -11,14 +13,14 @@ html(lang="ru-RU")
 
     head
         meta(charset="utf-8")
-        title Вход | Мирный воин
+        title Видео-уроки | Мирный воин
 
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
         meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
         meta(name="generator" content="web-master-pro.ru")
 
         link(rel="stylesheet" href="assets/css/style.min.css?rev=@@hash")
-
+        
         link(rel="apple-touch-icon", sizes="57x57", href="assets/img/favicons/apple-touch-icon-57x57.png")
         link(rel="apple-touch-icon", sizes="60x60", href="assets/img/favicons/apple-touch-icon-60x60.png")
         link(rel="apple-touch-icon", sizes="72x72", href="assets/img/favicons/apple-touch-icon-72x72.png")
@@ -42,12 +44,42 @@ html(lang="ru-RU")
         meta(name="msapplication-config", content="assets/img/favicons/browserconfig.xml")
         meta(name="theme-color", content="#ffffff")
 
-    body.page-login
-        .page-login__logo
-        +login-box("page-login__login-box")
+    body.page
+        +header-inner()
+        +s-videos()
+        +footer-inner()
 
         .hidden
-            +popup-recovery-ok()
+            +popup-video-1()
+            +popup-video-2()
+            +popup-video-3()
+            +popup-video-4()
+            +popup-video-5()
+            +popup-video-6()
+            +popup-video-7()
+            +popup-video-8()
+            +popup-video-9()
+            +popup-video-10()
+            +popup-video-11()
+            +popup-video-12()
+            +popup-video-13()
+            +popup-video-14()
+            +popup-video-15()
+            +popup-video-16()
+            +popup-video-17()
+            +popup-video-18()
+            +popup-video-19()
+            +popup-video-20()
+            +popup-video-21()
+            +popup-video-22()
+            +popup-video-23()
+            +popup-video-24()
+            +popup-video-25()
+            +popup-video-26()
+            +popup-video-27()
+            +popup-video-28()
+            +popup-video-29()
+            +popup-privacy()
 
         <!--[if lt IE 9]>
         script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js")

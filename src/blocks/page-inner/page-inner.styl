@@ -1,0 +1,59 @@
+.page-inner
+    &__content
+        container(1040px)
+        padding 50px 20px
+        color black
+        font()
+        line-height 1.2
+
+        h1
+            font(Russo)
+            font-size 40px
+            margin 0 0 1em
+            text-align center
+            +below(480px)
+                font-size 30px
+                text-align center
+
+        h2
+            font(Extra)
+            font-size 34px
+            margin 0 0 1em
+            +below(480px)
+                font-size 26px
+                text-align center
+        h3
+            font(Bold)
+            font-size 28px
+            margin 0 0 1em
+            +below(480px)
+                font-size 20px
+                text-align center
+
+        p
+            font()
+            font-size 20px
+            text-align justify
+            margin 0 0 1.5em
+            +below(480px)
+                font-size 18px
+                text-align left
+
+        ul
+        ol
+            margin 0
+            padding-bottom 1.5em
+            &
+            & li
+                font()
+                font-size 20px
+                margin-top .5em
+                margin-bottom .5em
+                +below(480px)
+                    font-size 18px
+
+        a
+            color #003cff
+            text-decoration underline
+            &:hover
+                text-decoration none

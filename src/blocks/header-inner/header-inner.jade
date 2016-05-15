@@ -1,0 +1,11 @@
+mixin header-inner(addclass)
+    header.header-inner(class= addclass)#header-inner
+        .header-inner__in
+            .header-inner__logo(title="Мирный воин")
+            .header-inner__user <strong>Приятного просмотра,</strong> dont90@yandex.ru 
+            a(href="#").header-inner__logout Выход
+
+mixin header-inner-short(addclass)
+    header.header-inner.header-inner--short(class= addclass)#header-inner
+        .header-inner__in
+            .header-inner__logo(title="Мирный воин")

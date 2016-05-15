@@ -1,5 +1,111 @@
-.footer
-    overflow hidden
+.footer-inner
+    min-height 180px
+    background-color #313135
 
     &__in
-        container(1000px)
+        container(1040px)
+        display flex
+        flex-flow row nowrap
+        justify-content space-between
+        padding 20px 20px 15px
+        +below(900px)
+            flex-flow row wrap
+            justify-content space-around
+
+    &__left
+        width 220px
+        padding-top 20px
+        +below(900px)
+            order 2
+        +below(480px)
+            width 100%
+            text-align center
+            padding-top 40px
+
+    &__logo
+        display inline-block
+        sprite($icon_logo_inner)
+        margin 0 0 20px
+
+    &__company
+        color white
+        font()
+        font-size 12px
+        line-height 1.5
+        margin 0
+
+    &__mid
+        width 420px
+        text-align center
+        +below(900px)
+            width 100%
+            padding-top 20px
+
+    &__copyright
+        max-width 420px
+        color white
+        font()
+        font-size 12px
+        line-height 1.5
+        text-align center
+        margin 0 auto 15px
+
+    &__contacts
+        color white
+        font()
+        font-size 12px
+        line-height 1.5
+        text-align center
+        margin 0
+
+    &__phone-link
+        color white
+        font()
+        font-size 12px
+        text-decoration none
+        &:hover
+            text-decoration none
+
+    &__email-link
+        color white
+        font()
+        font-size 12px
+        text-decoration none
+        &:hover
+            text-decoration underline
+
+    &__privacy-link
+        color white
+        font()
+        font-size 12px
+        text-decoration underline
+        &:hover
+            text-decoration none
+
+    &__right
+        width 151px
+        text-align right
+        padding-top 45px
+        padding-bottom 20px
+        +below(900px)
+            order 3
+
+    &__developed
+        display inline-block
+        width 151px
+        height 53px
+        color white
+        font()
+        font-size 14px
+        line-height 1
+        text-align right
+        text-decoration none
+        position relative
+        &:hover
+            text-decoration underline
+        &::before
+            content ""
+            display block
+            sprite($icon_upakovka_inner)
+            position absolute
+            top 21px

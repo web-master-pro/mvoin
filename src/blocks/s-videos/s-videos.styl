@@ -1,0 +1,203 @@
+.s-videos
+    background url(img/s-videos-bg.jpg) no-repeat center top,
+    url(img/s-videos-bottom-bg.jpg) no-repeat center bottom
+    +below(1000px)
+        background #fff
+    &__in
+        container(1040px)
+        padding 890px 20px 520px
+        +below(1000px)
+            padding-top 0px
+            padding-bottom 50px
+
+    &__cover
+        display none
+        +below(1000px)
+            display block
+            width 100%
+            height auto
+            margin 0 auto
+
+    &__pretitle
+        display inline-block
+        color black
+        font()
+        font-size 28px
+        line-height 1.2
+        margin 0
+        position absolute
+        top 368px
+        right 20px
+        +below(1000px)
+            display block
+            position relative
+            top auto
+            right auto
+            text-align center
+            margin -30px 0 30px
+        +below(480px)
+            margin-top 0
+            font-size 20px
+
+    &__title-1
+    &__title-2
+        display block
+        max-width 530px
+        color black
+        font(Bold)
+        font-size 40px
+        line-height 1
+        +below(550px)
+            font-size 30px
+        +below(440px)
+            font-size 22px
+    &__title-1
+        position absolute
+        margin 0
+        top 465px
+        left 450px
+        +below(1030px)
+            left 430px
+        +below(1000px)
+            position relative
+            top auto
+            left auto
+            text-align center
+            margin 0 auto 15px
+        +below(440px)
+            margin-bottom 5px
+    &__title-2
+        position absolute
+        margin 0
+        top 515px
+        left 475px
+        +below(1030px)
+            left 455px
+        +below(1000px)
+            position relative
+            top auto
+            left auto
+            text-align center
+            margin 0 auto 80px
+
+.videos
+    display block
+    max-width 750px
+    padding 0
+    position relative
+    +below(1000px)
+        margin 0 auto
+
+    &__pages
+        display block
+        width 100%
+        list-style none
+        padding 0
+        margin 0
+        position relative
+
+    &__page
+        display block
+        width 100%
+        margin 0 0 10px
+        position relative
+
+    &__page-title
+        display block
+        background-color #ffea00
+        color #010101
+        font(Russo)
+        font-size 24px
+        line-height 1
+        padding 17px 50px 15px 34px
+        margin 0
+        position relative
+        cursor pointer
+        &::after
+            content ""
+            sprite($icon_target)
+            position absolute
+            top 50%
+            transform translateY(-50%)
+            right 15px
+        +below(480px)
+            font-size 20px
+            padding-left 20px
+
+    &__videos
+        display block
+        width 100%
+        list-style none
+        background-color white
+        box-shadow 0 0 49px rgba(0, 0, 0, 0.16)
+        padding 20px 25px
+        margin 0
+        +below(480px)
+            padding 20px
+
+    &__page:not(.active) &__videos
+        display none
+    &__page
+        display block !important
+
+    &__video
+        min-height 25px
+        color #1e499d
+        font()
+        font-size 20px
+        line-height 1.2
+        padding 0 10px 0 48px
+        position relative
+        margin 12px 0
+        &::before
+            content ""
+            display inline
+            position relative
+        &::after
+            content ""
+            sprite($icon_video_blue)
+            position absolute
+            left 0
+            top 0
+        &:nth-child(1)
+            &::before
+                content "1. "
+        &:nth-child(2)
+            &::before
+                content "2. "
+        &:nth-child(3)
+            &::before
+                content "3. "
+        &:nth-child(4)
+            &::before
+                content "4. "
+        &:nth-child(5)
+            &::before
+                content "5. "
+        &:nth-child(6)
+            &::before
+                content "6. "
+        &:nth-child(7)
+            &::before
+                content "7. "
+        &:nth-child(8)
+            &::before
+                content "8. "
+        &:nth-child(9)
+            &::before
+                content "9. "
+        +below(480px)
+            font-size 18px
+            padding-left 40px
+
+    &__video-link
+        color #1e499d
+        font()
+        font-size 20px
+        border-bottom 1px dashed #1e499d
+        text-decoration none
+        &:hover
+            text-decoration none
+            border-bottom none
+        +below(480px)
+            font-size 16px
