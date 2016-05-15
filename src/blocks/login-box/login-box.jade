@@ -1,0 +1,16 @@
+mixin login-box(addclass)
+    .login-box(class= addclass)
+        h2.login-box__title ПОЛУЧИТЬ ДОСТУП К КУРСУ
+        p.login-box__subtitle Введите логин и пароль, высланные  Вам по e-mail после оплаты курса.
+
+        form(action="login.php" method="POST").form-login.login-box__form-login#form-login
+            input(type="email" name="login" placeholder="Введите e-mail").form-login__input
+            input(type="password" name="password" placeholder="Введите пароль").form-login__input
+            p.form-login__pass
+                a(href="#").form-login__pass-link Забыли пароль?
+            button(type="submit").form-login__button ПОЛУЧИТЬ ДОСТУП
+
+        form(action="recovery.php" method="POST").form-recovery.login-box__form-recovery#form-recovery
+            h3.form-recovery__title Восстановление пароля
+            input(type="email" name="email" placeholder="Введите e-mail").form-recovery__input
+            button(type="submit").form-recovery__button Отправить

@@ -1,68 +1,68 @@
 input()
     box-sizing border-box
     width 100%
-    max-width 278px
-    height 45px
+    height 60px
     background-color white
-    border 1px solid #e4e4e4
-    color #003874
-    font(Thin)
-    font-size 18px
-    line-height 45px
-    padding 0 20px
+    border 1px solid #757872
+    color black
+    font()
+    font-size 15px
+    line-height 60px
+    padding 0 30px
     position relative
     &:focus
         background-color white
-        border 1px solid #003874
+        border 2px solid #ffea00
+    +below(480px)
+        padding 0 20px
 
 label.invalid-field
     display block
     width 100%
-    max-width 278px
     color red
     font(Regular)
     font-size 14px
     line-height 1
     text-align center
-    padding 0px 20px
-    margin -10px auto 15px
+    padding 0px 20px 10px
+    margin -10px auto 10px
     &.hidden
         display none !important
 
 input::-webkit-input-placeholder
-    color #003874
-    opacity 1
+    color #000
+    opacity .8
 input::-moz-placeholder
-    color #003874
-    opacity 1
+    color #000
+    opacity .8
 input:-moz-placeholder
-    color #003874
-    opacity 1
+    color #000
+    opacity .8
 input:-ms-input-placeholder
-    color #003874
-    opacity 1
+    color #000
+    opacity .8
 input:input-placeholder
-    color #003874
-    opacity 1
+    color #000
+    opacity .8
 
 input:focus::-webkit-input-placeholder
-    opacity 0.5
-    color #003874
+    opacity 0.2
+    color #000
 input:focus::-moz-placeholder
-    opacity 0.5
-    color #003874
+    opacity 0.2
+    color #000
 input:focus:-moz-placeholder
-    opacity 0.5
-    color #003874
+    opacity 0.2
+    color #000
 input:focus:-ms-input-placeholder
-    opacity 0.5
-    color #003874
+    opacity 0.2
+    color #000
 input:focus:input-placeholder
-    opacity 0.5
-    color #003874
+    opacity 0.2
+    color #000
 
 input:-webkit-autofill
     -webkit-box-shadow inset 0 0 0 50px rgba(255,255,255,1) !important
     background-color white !important
-    -webkit-text-fill-color #003874 !important;
-    color #003874 !important
+    -webkit-text-fill-color #000 !important;
+    color #000 !important

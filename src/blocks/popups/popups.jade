@@ -1,17 +1,8 @@
-mixin form-order(addclass)
-    form.form-order.popup(action="assets/sendmail.php", method="POST", class= addclass)#form-order
-        h3.form-order__title Запишитесь на бесплатную консультацию
-        input(type="hidden" name="form" value="form-order")
-        input(type="text" name="name" placeholder="Ваше имя").form-order__input
-        input(type="tel" name="phone" placeholder="Ваш телефон").form-order__input.js-phone-field
-        button(type="submit" role="button").form-order__button Записаться
-        p.form-order__privacy Все данные строго конфиденциальны
-
-mixin popup-thankyou(addclass)
-    .popup-thankyou.popup(class= addclass)#popup-thankyou
-        h3.popup-thankyou__title Спасибо!
-        p.popup-thankyou__text Спасибо, что оставили заявку. Мы свяжемся с Вами в самое ближайшее время.
-        button.popup-thankyou__button.js-close-button Закрыть
+mixin popup-recovery-ok(addclass)
+    .popup-recovery-ok.popup(class= addclass)#popup-recovery-ok
+        h3.popup-recovery-ok__title Запрос отправлен!
+        p.popup-recovery-ok__text Мы свяжемся с Вами в самое ближайшее время.
+        button.popup-recovery-ok__button.js-close-button Закрыть
 
 mixin popup-video-1(addclass)
     .popup-video.popup#popup-video-1(class= addclass)

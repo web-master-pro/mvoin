@@ -7,19 +7,19 @@ container(w = 1000px)
 font(face = Regular)
     if face == Regular
         font-family "RalewayRegular", sans-serif
-        font-weight 400
+        // font-weight 400
     if face == Bold
         font-family "RalewayBold", sans-serif
-        font-weight 700
+        // font-weight 700
     if face == Black
         font-family "RalewayBlack", sans-serif
-        font-weight 900
+        // font-weight 900
     if face == Extra
         font-family "RalewayExtraBold", sans-serif
-        font-weight 700
+        // font-weight 700
     if face == Russo
         font-family "RussoOneRegular", sans-serif
-        font-weight 400
+        // font-weight 400
 
 button()
     display block
@@ -46,3 +46,5 @@ button()
     &:hover
         background-color #ffec1b
         background-image none
+    +below(480px)
+        font-size 15px

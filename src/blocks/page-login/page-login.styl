@@ -1,0 +1,19 @@
+.page-login
+    background #666 url(img/login-bg.jpg) no-repeat center center
+    background-size cover
+    background-attachment fixed
+    padding 44px 20px 40px
+    margin 0
+    position relative
+    +below(480px)
+        padding 30px 20px
+
+    &__logo
+        sprite($icon_logo_login)
+        margin 0 auto 75px
+        +below(480px)
+            transform scale(.5,.5)
+            margin-bottom 0px
+
+    &__login-box
+        margin 0 auto
