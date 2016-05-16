@@ -10,23 +10,29 @@ $(document).ready(function(){
     });
 
     function initVideoNote(elem) {
-        var popup = elem.attr("href"),
-            popupID = $(popup).attr("id"),
-            textarea = $(popup + " .popup-video__textarea");
-        textarea.val(Cookies.get(popupID));
+        var elemNumber = $(".js-popup-video").index(elem) + 1,
+            cookieName = "popup-video-" + elemNumber,
+            title = elem.text(),
+            textarea = $(".popup-video__textarea");
+        $(".popup-video__title").text(title);
+        $(".popup-video__video").attr("src",elem.attr("href") + "?rel=0&amp;showinfo=0");
+        textarea.val(Cookies.get(cookieName));
         if (textarea.val().length > 0) {
             textarea.next(".popup-video__placeholder").fadeOut();
         };
     };
 
     function saveVideoNote(elem) {
-        var popup = elem.attr("href"),
-            popupID = $(popup).attr("id"),
-            textarea = $(popup + " .popup-video__textarea");
-        Cookies.set(popupID, textarea.val(), {expires: 365})
+        var elemNumber = $(".js-popup-video").index(elem) + 1,
+            cookieName = "popup-video-" + elemNumber,
+            textarea = $(".popup-video__textarea");
+        Cookies.set(cookieName, textarea.val(), {expires: 365});
     };
 
     $('.js-popup-video').magnificPopup({
+        items:{
+            src:$('#popup-video')
+        },
         type:'inline',
         midClick: true,
         removalDelay: 500,

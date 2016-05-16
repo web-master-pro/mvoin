@@ -4,6 +4,17 @@ mixin popup-recovery-ok(addclass)
         p.popup-recovery-ok__text Мы свяжемся с Вами в самое ближайшее время.
         button.popup-recovery-ok__button.js-close-button Закрыть
 
+mixin popup-video(addclass)
+    .popup-video.popup#popup-video(class= addclass)
+        h2.popup-video__title
+        .popup-video__content
+            iframe(width="570" height="319" src="#" frameborder="0" allowfullscreen).popup-video__video
+            .popup-video__aside
+                h3.popup-video__aside-title Заметка
+                textarea.popup-video__textarea
+                p.popup-video__placeholder Запишите важные мысли, чтобы не забыть
+        button(data-mfp-src="#popup-order").popup-video__button.js-popup Получить полный доступ к курсу
+
 mixin popup-video-1(addclass)
     .popup-video.popup#popup-video-1(class= addclass)
         h2.popup-video__title 1. Права и обязанности призывников
