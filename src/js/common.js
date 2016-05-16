@@ -20,6 +20,12 @@ $(document).ready(function() {
         $('html').addClass('safari');
     };
 
+    if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+        $("html").addClass("macos");
+    } else {
+        $("html").addClass("pc");
+    }
+
     if (navigator.userAgent.search("MSIE") >= 0) {
         $('html').addClass('ie');
     };
