@@ -230,7 +230,7 @@ gulp.task('js:jquery', function() {
 gulp.task('img', function () {
     return gulp.src(path.src.img)
         .pipe(plumber(options.plumber))
-        .pipe(imagemin(options.imagemin))
+        // .pipe(imagemin(options.imagemin))
         .pipe(gulp.dest(path.dist.img))
 });
 
@@ -246,7 +246,7 @@ gulp.task('sprite', function (cb) {
 
     spriteData.img
         .pipe(buffer())
-        .pipe(imagemin())
+        // .pipe(imagemin())
         .pipe(gulp.dest(path.dist.img));
 
     spriteData.css

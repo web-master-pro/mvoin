@@ -17,7 +17,7 @@ $(document).ready(function(){
             password: {required: true}
         },
         messages: {
-            login: {required: "Это поле должно быть заполнено", email: "Неправильный формат Email"},
+            login: {required: "Это поле должно быть заполнено", email: ""},
             password: {required: "Это поле должно быть заполнено"}
         },
         focusInvalid: false,

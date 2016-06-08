@@ -76,24 +76,44 @@ $(document).ready(function(){
         $(this).prev(".popup-video__textarea").focus();
     })
 
-    $(".popup-order__button").on("click", function(){
-        var res = true;
-        if (!$("#popup-order-checkbox-1").is(':checked')) {
-            $("#popup-order-error-1").fadeIn(500);
-            res = false;
-        };
-        if (!$("#popup-order-checkbox-2").is(':checked')) {
-            $("#popup-order-error-2").fadeIn(500);
-            res = false;
-        };
-        if (res) {
-            document.location.href = $(this).attr("data-href");
-        }
-    })
+    $(".form-order__button").on("click", function(e){
+        var result = true,
+            email = $('#form-order [name="email"]');
 
-    $('.popup-order__checkbox').change(function() {
+        function isValidEmailAddress(emailAddress) {
+            return /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test( emailAddress );
+        };
+
+        if (!email.val()) {
+            $("#form-order-error-email").text("Это поле должно быть заполнено").fadeIn(500);
+            result = false;
+        }  else if (!isValidEmailAddress(email.val())) {
+            $("#form-order-error-email").text("Неправильный формат Email").fadeIn(500);
+            result = false;
+        };
+        if (!$("#form-order-checkbox-1").is(':checked')) {
+            $("#form-order-error-1").fadeIn(500);
+            result = false;
+        };
+        if (!$("#form-order-checkbox-2").is(':checked')) {
+            $("#form-order-error-2").fadeIn(500);
+            result = false;
+        };
+
+        if (result) {
+            yaCounter37405830.reachGoal("start_pay");
+        }
+
+        return result;
+    });
+
+    $('.form-order__input').focus(function() {
+        $(this).next(".form-order__error").fadeOut(500);
+    });
+
+    $('.form-order__checkbox').change(function() {
         if($(this).is(":checked")) {
-            $(this).next().next(".popup-order__error").fadeOut(500);
+            $(this).next().next(".form-order__error").fadeOut(500);
         }
     });
 

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<!-- ========================================================== -->
+<!-- Верстка сайта: http://web-master-pro.ru -->
+<!-- ========================================================== -->
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+    <title>Мирный воин</title>
+    <script>
+        !function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="assets/css/fonts.min.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();
+    </script>
+    <style>
+        html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0}body{margin:0;position:relative;overflow-x:hidden;overflow-y:scroll;min-width:320px;height:100%;color:#333;background-color:#fff;font-family:"RalewayRegular",sans-serif;font-size:16px;-webkit-font-smoothing:subpixel-antialiased!important;line-height:1}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress,sub,sup{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{text-decoration:underline dotted;border-bottom:none}b,strong{font-weight:bolder}dfn{font-style:italic}h1{margin:.67em 0;font-size:2em}mark{color:#000;background-color:#ff0}small{font-size:80%}sub,sup{position:relative;font-size:75%;line-height:0}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}button,input,select,textarea{margin:0;font:inherit}optgroup{font-weight:700}button,hr,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{margin:0 2px;padding:.35em .625em .75em;border:1px solid silver}legend{display:table;max-width:100%;white-space:normal;color:inherit}textarea{overflow:auto}[type=checkbox],[type=radio],legend{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{opacity:.54;color:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}:focus,a,input{outline:none}html.ios,html.macos,html.safari{overflow-x:hidden}*,:after,:before{-webkit-box-sizing:inherit;-moz-box-sizing:inherit;box-sizing:inherit}body -webkit-backface-visibility hidden -moz-backface-visibility hidden{-ms-backface-visibility:hidden}body:after{display:table;clear:both;content:""}.hidden{display:none}.animated{-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s}.header,.page{position:relative}.header{width:100%;background:url(assets/img/header-bg.jpg) no-repeat center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}.header__in{position:relative;display:block;max-width:1010px;margin:0 auto;padding:75px 20px}.header__logo{display:block;margin:0 auto 65px}.header__list{margin:0 0 15px;padding:0;list-style:none;text-align:center;font-size:0}.header__list--mobile{display:none}.header__item{display:inline-block;margin:0 45px 20px;text-transform:uppercase;font-family:"RalewayBlack",sans-serif;font-size:20px;line-height:1}.header__subtitle,.header__title{position:relative;text-align:center;line-height:1}.header__title{text-transform:uppercase;max-width:1000px;min-height:95px;margin:0 auto;padding:25px 20px 35px;color:#fff;background-color:#212025;font-family:"RussoOneRegular",sans-serif;font-size:48px}.header__subtitle{max-width:820px;min-height:56px;margin:-13px auto 62px;padding:17px 10px 15px;color:#212025;background-color:#ffea00;font-family:"RalewayBold",sans-serif;font-size:28px}.header__button,.header__price{text-align:center;text-transform:uppercase;font-family:"RussoOneRegular",sans-serif;line-height:1}.header__price{min-height:70px;max-width:455px;margin:0 auto 71px;padding:23px 20px;color:#fff;background-color:#212025;font-size:27px}.header__price strong{font-size:32px;font-weight:400}.header__button{position:relative;display:block;width:100%;max-width:320px;height:61px;margin:-3px auto 0;padding:0 20px 0 60px;cursor:pointer;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease;color:#000;border:none;border-top:3px solid transparent;border-bottom:3px solid #b8a900;background-color:#ffea00;background-image:-webkit-gradient(linear,left bottom,left top,from(transparent),to(rgba(255,255,255,.16)));background-image:-webkit-linear-gradient(bottom,transparent 0%,rgba(255,255,255,.16) 100%);background-image:-moz-linear-gradient(bottom,transparent 0%,rgba(255,255,255,.16) 100%);background-image:-o-linear-gradient(bottom,transparent 0%,rgba(255,255,255,.16) 100%);background-image:linear-gradient(to top,transparent 0%,rgba(255,255,255,.16) 100%);font-size:17px;font-weight:400}.header__button:hover{background-color:#ffec1b;background-image:none}.header__button::before{position:absolute;top:12px;left:45px;content:""}.header__subbutton{margin:15px 0 0;text-align:center;text-transform:lowercase;color:#ffea00;font-family:"RalewayRegular",sans-serif;font-size:15px;line-height:1}@media only screen and (max-width:480px){.header__in{padding:15px 20px 35px}.header__logo{margin-bottom:15px;-webkit-transform:scale(.6,.6);-moz-transform:scale(.6,.6);-ms-transform:scale(.6,.6);-o-transform:scale(.6,.6);transform:scale(.6,.6)}.header__list--desktop{display:none}.header__list--mobile{display:block}.header__item{margin-bottom:5px}.header__title{font-size:34px}.header__price,.header__subtitle{margin-bottom:35px;font-size:24px}.header__price{font-size:20px}.header__price strong{font-size:24px}.header__button{font-size:15px}.header__button::before{left:30px}}
+    </style>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/fonts.min.css?rev=5ddc447a91f7f67d9ae074467a11d6f8">
+        <link rel="stylesheet" href="assets/css/style.min.css?rev=806a2b57442a2983103bcbc6a12c52d8">
+    </noscript>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="generator" content="web-master-pro.ru">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="assets/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/img/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="assets/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Мирный воин">
+    <meta name="application-name" content="Мирный воин">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <!--[if IE]>
+    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com" target="_blank"> обновите браузер</a> для лучшего отображения сайта.</p><![endif]-->
+    <header id="header" class="header">
+        <div class="header__in">
+            <div class="header__logo"></div>
+            <ul class="header__list header__list--desktop">
+                <li class="header__item">Без взяток</li>
+                <li class="header__item">Самостоятельно</li>
+                <li class="header__item">С гарантией</li>
+            </ul>
+            <h1 class="header__title">Освободись от армии навсегда</h1>
+            <p class="header__subtitle">Пошаговая инструкция к получению военного билета</p>
+            <ul class="header__list header__list--mobile">
+                <li class="header__item">Без взяток</li>
+                <li class="header__item">Самостоятельно</li>
+                <li class="header__item">С гарантией</li>
+            </ul>
+            <p class="header__price">Всего <strong>3500</strong> рублей</p>
+            <button data-mfp-src="https://www.youtube.com/watch?v=J9AXqGaY__w" class="header__button js-popup-youtube">Коротко о курсе</button>
+            <p class="header__subbutton">видеоприглашение от автора</p>
+        </div>
+    </header>
+    <nav id="nav" class="nav">
+        <div class="nav__in">
+            <button title="Меню" class="mmenu-trigger nav__mmenu-trigger"><span class="mmenu-trigger__in"></span>
+            </button>
+            <ul class="nav__menu">
+                <li class="nav__menu-item"><a href="#author" class="nav__menu-link">Автор курса</a>
+                </li>
+                <li class="nav__menu-item"><a href="#themes" class="nav__menu-link nav__menu-link--active">Бесплатные видео</a>
+                </li>
+                <li class="nav__menu-item"><a href="#faq" class="nav__menu-link">Вопрос/Ответ</a>
+                </li>
+            </ul>
+            <button data-mfp-src="#popup-order" class="nav__button js-popup">Купить курс</button>
+        </div>
+    </nav>
+    <section id="povestka" class="s-povestka">
+        <div class="s-povestka__in">
+            <img src="assets/img/s-povestka-guy.png" width="600" height="680" alt="" class="s-povestka__photo" />
+            <h2 class="s-povestka__title">Начался призыв и тебе пришла повестка?</h2>
+            <p class="s-povestka__subtitle">Прятаться от военкомата - не вариант</p>
+            <p class="s-povestka__text">Вариант - получить военный билет, освобождающий от обязательной службы и иметь полный контроль над своей жизнью.</p>
+        </div>
+    </section>
+    <section id="reasons" class="s-reasons">
+        <div class="s-reasons__in">
+            <h2 class="s-reasons__title">Этот курс точно для тебя, если:</h2>
+            <ol class="s-reasons__list">
+                <li class="s-reasons__item">Ты не хочешь платить взятки и делать липовые справки</li>
+                <li class="s-reasons__item">Тебе 27 и больше, а военного билета нет</li>
+                <li class="s-reasons__item">Ты успешный бизнесмен или строишь карьеру, но армия рушит все твои планы</li>
+                <li class="s-reasons__item">Одна мысль об армии вызывает страх и дрожь</li>
+                <li class="s-reasons__item">Нет никаких идей, как избежать призыва</li>
+                <li class="s-reasons__item">Ты боишься, что военкомат заберет тебя прямо из дома</li>
+            </ol>
+        </div>
+    </section>
+    <section id="kurs" class="s-kurs">
+        <img src="assets/img/s-kurs-cover.jpg" width="1000" height="838" alt="Мирный воин" class="s-kurs__cover" />
+        <div class="s-kurs__in">
+            <div class="s-kurs__content">
+                <h2 class="s-kurs__title">Решить проблему поможет авторский видеокурс Талгата&nbsp;Юнусова</h2>
+                <p class="s-kurs__text">Это самый <strong>быстрый, надежный</strong> и <strong>дешевый</strong> способ остаться на гражданке.</p>
+                <p class="s-kurs__text s-kurs__text--bold">Легально избежать призыва сможет каждый!</p>
+                <div class="s-kurs__button-block">
+                    <button data-mfp-src="#popup-order" class="s-kurs__button js-popup">Заказать курс</button>
+                    <p class="s-kurs__subbutton">и получить доступ к видеоматериалам</p>
+                </div>
+            </div>
+        </div>
+        <img src="assets/img/boot.png" width="817" height="854" alt="" class="s-kurs__boot" />
+    </section>
+    <section id="steps" class="s-steps">
+        <div class="s-steps__in">
+            <h2 class="s-steps__title">Три шага к полной свободе</h2>
+            <div data-wow-delay="0.5s" class="s-steps__step-1 wow fadeIn"></div>
+            <div data-wow-delay="1.5s" class="s-steps__step-2 wow fadeIn"></div>
+            <div data-wow-delay="2.5s" class="s-steps__step-3 wow fadeIn"></div>
+            <ol class="s-steps__list">
+                <li class="s-steps__item">Смотришь видеокурс</li>
+                <li class="s-steps__item">Следуешь рекомендациям</li>
+                <li class="s-steps__item">Получаешь военный билет</li>
+            </ol>
+        </div>
+    </section>
+    <section id="advantages" class="s-advantages">
+        <div class="s-advantages__in">
+            <h2 class="s-advantages__title">Преимущества видеокурса</h2>
+            <ul class="s-advantages__list">
+                <li class="advantage s-advantages__item">
+                    <h3 class="advantage__title">Информация о законах и&nbsp;правах призывников</h3>
+                    <ul class="advantage__list">
+                        <li class="advantage__item">Узнай, как доказать свою болезнь</li>
+                        <li class="advantage__item">Не позволяй врачам и чиновникам «вытирать об тебя ноги»</li>
+                        <li class="advantage__item">Защити свои интересы</li>
+                    </ul>
+                </li>
+                <li class="advantage s-advantages__item">
+                    <h3 class="advantage__title">Четкая стратегия освобождения от армии</h3>
+                    <ul class="advantage__list">
+                        <li class="advantage__item">Изучи рекомендации по отсрочке и освобождению от армии</li>
+                        <li class="advantage__item">Составь пошаговую схему действий</li>
+                        <li class="advantage__item">Получи заветное освобождение</li>
+                    </ul>
+                </li>
+                <li class="advantage s-advantages__item">
+                    <h3 class="advantage__title">Дополнительные материалы</h3>
+                    <ul class="advantage__list">
+                        <li class="advantage__item">Узнай, как подготовиться к призыву</li>
+                        <li class="advantage__item">Получи надежный «арсенал знаний» для защиты от обязательной службы</li>
+                        <li class="advantage__item">Научись правильно действовать в ситуации, когда военкомат превышает полномочия</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="s-advantages__button-block">
+                <button data-mfp-src="#popup-order" class="s-advantages__button js-popup">Оплатить курс</button>
+                <p class="s-advantages__subbutton">и получить доступ к видеоматериалам</p>
+            </div>
+        </div>
+    </section>
+    <section id="author" class="s-author">
+        <div class="s-author__in">
+            <div class="s-author__top">
+                <p class="s-author__pretitle">Автор курса</p>
+                <h2 class="s-author__title">Талгат <strong>Юнусов</strong></h2>
+                <img src="assets/img/s-author-photo.jpg" width="770" height="867" alt="Талгат Юнусов" class="s-author__photo" />
+            </div>
+            <ul class="s-author__gallery">
+                <li class="s-author__gallery-item">
+                    <img src="assets/img/gallery/gallery-1-mini.jpg" width="112" height="87" alt="" class="s-author__gallery-img" />
+                    <a href="assets/img/gallery/gallery-1.jpg" class="s-author__gallery-link"></a>
+                </li>
+                <li class="s-author__gallery-item">
+                    <img src="assets/img/gallery/gallery-2-mini.jpg" width="112" height="87" alt="" class="s-author__gallery-img" />
+                    <a href="assets/img/gallery/gallery-2.jpg" class="s-author__gallery-link"></a>
+                </li>
+                <li class="s-author__gallery-item">
+                    <img src="assets/img/gallery/gallery-3-mini.jpg" width="112" height="87" alt="" class="s-author__gallery-img" />
+                    <a href="assets/img/gallery/gallery-3.jpg" class="s-author__gallery-link"></a>
+                </li>
+                <li class="s-author__gallery-item">
+                    <img src="assets/img/gallery/gallery-4-mini.jpg" width="112" height="87" alt="" class="s-author__gallery-img" />
+                    <a href="assets/img/gallery/gallery-4.jpg" class="s-author__gallery-link"></a>
+                </li>
+                <li class="s-author__gallery-item">
+                    <img src="assets/img/gallery/gallery-5-mini.jpg" width="112" height="87" alt="" class="s-author__gallery-img" />
+                    <a href="assets/img/gallery/gallery-5.jpg" class="s-author__gallery-link"></a>
+                </li>
+            </ul>
+            <div class="s-author__content">
+                <h3 class="s-author__headline">Основатель Службы помощи <br>призывникам <strong>«Мирный воин»</strong></h3>
+                <ul class="s-author__list s-author__list--red">
+                    <li class="s-author__item">7 филиалов по всей России</li>
+                    <li class="s-author__item">5 лет успешной практики</li>
+                    <li class="s-author__item">Личная консультация для 100% результата</li>
+                </ul>
+                <h3 class="s-author__headline">Эксперт, автор пошаговой стратегии "5 способов получить военный билет"</h3>
+                <ul class="s-author__list">
+                    <li class="s-author__item">Освободился от армии без юристов и взяток</li>
+                    <li class="s-author__item">Помог 532 призывникам получить военный билет (и это число растет)</li>
+                    <li class="s-author__item">Более 500 000 просмотров на личном канале YouTube</li>
+                </ul>
+                <ul class="s-author__videos">
+                    <li class="s-author__videos-item"><a href="https://www.youtube.com/watch?v=6GDTo6kZnuo" class="s-author__videos-link js-popup-youtube">5 способов получить военный билет</a>
+                    </li>
+                    <li class="s-author__videos-item"><a href="https://www.youtube.com/watch?v=XaMt2pzmNh8" class="s-author__videos-link js-popup-youtube">Адвокаты для призывников "Мирный Воин"</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <img src="assets/img/flask.png" width="880" height="931" alt="" class="s-author__flask" />
+    </section>
+    <section id="team" class="s-team">
+        <div class="s-team__in">
+            <h2 class="s-team__title"><strong>Можно нанять целую команду</strong> <br>из консультантов, врачей, юристов, которые будут отстаивать твои права перед военкоматом.</h2>
+            <img src="assets/img/s-team-experts.png" width="597" height="384" alt="" class="s-team__experts" />
+            <p class="s-team__expensive">Это стоит очень дорого.</p>
+            <div class="s-team__solution">
+                <p class="s-team__solution-text"><strong>Выход - заказать видеокурс</strong> 
+                    <br>всего <span>3500 рублей</span>
+                </p>
+                <div class="s-team__solution-info">!</div>
+                <div class="s-team__solution-popup">Это в 100 раз меньше суммы, которую ты сможешь с легкостью заработать за год.
+                    <br><strong>Но за год в армии ты не заработаешь ни копейки.</strong>
+                </div>
+            </div>
+            <p class="s-team__effect">Эффект видеокурса равен эффекту команды специалистов. Следуй инструкции, и у тебя все получится!</p>
+            <div class="s-team__guarantee">
+                <h3 class="s-team__guarantee-title">Гарантия</h3>
+                <p class="s-team__guarantee-text">Если информация из видеокурса покажется тебе неактуальной и не принесет пользы, мы вернем полную стоимость</p>
+            </div>
+        </div>
+    </section>
+    <section id="themes" class="s-themes">
+        <div class="s-themes__in">
+            <h2 class="s-themes__title">Темы курса</h2>
+            <p class="s-themes__subtitle">Посмотрите <em>первые 3&nbsp;видео</em> бесплатно!</p>
+            <div class="contents s-themes__contents">
+                <ul class="contents__pages">
+                    <li class="contents__page active">
+                        <h3 class="contents__page-title">1. Введение</h3>
+                        <ol class="contents__videos">
+                            <li class="contents__video"><a href="https://www.youtube.com/embed/J9AXqGaY__w" class="contents__video-link js-popup-video">Права и обязанности призывников</a>
+                                <p class="contents__free">Бесплатно!</p>
+                            </li>
+                            <li class="contents__video"><a href="https://www.youtube.com/embed/J9AXqGaY__w" class="contents__video-link js-popup-video">Моя история</a>
+                                <p class="contents__free">Бесплатно!</p>
+                            </li>
+                            <li class="contents__video"><a href="https://www.youtube.com/embed/J9AXqGaY__w" class="contents__video-link js-popup-video">Как откосить от армии</a>
+                                <p class="contents__free">Бесплатно!</p>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Сколько стоит военный билет</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Пришла повестка</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Призыв на военную службу. Весенний и осенний</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="contents__page">
+                        <h3 class="contents__page-title">2. Диагностика</h3>
+                        <ol class="contents__videos">
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Расписания болезней</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Категория годности</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Анализ состояния здоровья</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Моя история. Кейсы.</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="contents__page">
+                        <h3 class="contents__page-title">3. Обследование</h3>
+                        <ol class="contents__videos">
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Подготовка</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Перепроверка</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Моя история</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="contents__page">
+                        <h3 class="contents__page-title">4. Подтверждение в военкомате</h3>
+                        <ol class="contents__videos">
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Медкомиссия в военкомате. Кейсы</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Заполнение акта</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Жалоба на военкомат</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="contents__page">
+                        <h3 class="contents__page-title">5. КМО</h3>
+                        <ol class="contents__videos">
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Подготовка</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Дополнительное обследование</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Документы на получение ВБ</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Силовой призыв</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="contents__page">
+                        <h3 class="contents__page-title">6. Отсрочка</h3>
+                        <ol class="contents__videos">
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">По здоровью</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">По обучению</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Отсрочка от армии</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="contents__page">
+                        <h3 class="contents__page-title">7. Дополнительно</h3>
+                        <ol class="contents__videos">
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Военный билет 27</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Первоначальная постановка на воинский учет</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">АГС</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Получение загранпаспорта</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Статьи в военнике. Часто задаваемые вопросы</a>
+                            </li>
+                            <li class="contents__video contents__video--disabled"><a href="#popup-order" class="contents__video-link js-popup">Новые правила в спорах</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <ol class="contents__tabs">
+                    <li class="contents__tab active">Введение
+                        <img src="assets/img/triangle.png" alt="" class="contents__tab-tri" />
+                    </li>
+                    <li class="contents__tab">Диагностика
+                        <img src="assets/img/triangle.png" alt="" class="contents__tab-tri" />
+                    </li>
+                    <li class="contents__tab">Обследования
+                        <img src="assets/img/triangle.png" alt="" class="contents__tab-tri" />
+                    </li>
+                    <li class="contents__tab">Подтверждение в военкомате
+                        <img src="assets/img/triangle.png" alt="" class="contents__tab-tri" />
+                    </li>
+                    <li class="contents__tab">КМО
+                        <img src="assets/img/triangle.png" alt="" class="contents__tab-tri" />
+                    </li>
+                    <li class="contents__tab">Отсрочка
+                        <img src="assets/img/triangle.png" alt="" class="contents__tab-tri" />
+                    </li>
+                    <li class="contents__tab">Дополнительно
+                        <img src="assets/img/triangle.png" alt="" class="contents__tab-tri" />
+                    </li>
+                </ol>
+            </div>
+            <p class="s-themes__text">Кто-то защищает страну, кто-то строит экономику. Ты уже выбрал свой путь. Закажи видеокурс Талгата Юнусова и останься на гражданке.</p>
+            <div class="s-themes__button-block">
+                <button data-mfp-src="#popup-order" class="s-themes__button js-popup">Получить полный доступ к&nbsp;курсу</button>
+                <p class="s-themes__subbutton">и начать изучение всех видеоматериалов</p>
+            </div>
+        </div>
+    </section>
+    <section id="chance" class="s-chance">
+        <div class="s-chance__in">
+            <h2 class="s-chance__title">Не упусти свой шанс получить:</h2>
+            <ul class="s-chance__list">
+                <li class="s-chance__item">
+                    <h3 class="s-chance__item-title">Знания</h3>
+                    <p class="s-chance__item-text">Ты будешь разбираться в законах и правах призывников, сможешь защитить не только себя, но также своих родных и друзей.</p>
+                </li>
+                <li class="s-chance__item">
+                    <h3 class="s-chance__item-title">Уверенность</h3>
+                    <p class="s-chance__item-text">Пока другие ребята думают, как избежать армии, ты уже с военным билетом и живешь полной жизнью.</p>
+                </li>
+                <li class="s-chance__item">
+                    <h3 class="s-chance__item-title">Время</h3>
+                    <p class="s-chance__item-text">Ты не потеряешь 12 месяцев, а с удовольствием используешь их для семьи, карьеры и путешествий.</p>
+                </li>
+                <li class="s-chance__item">
+                    <h3 class="s-chance__item-title">Свободу</h3>
+                    <p class="s-chance__item-text">Армия больше никогда не станет преградой твоим планам на гражданке.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="s-feedbacks">
+        <div class="s-feedbacks__in">
+            <h2 class="s-feedbacks__title">Убедитесь сами</h2>
+            <ul class="s-feedbacks__videos">
+                <li class="s-feedbacks__video">
+                    <h3 class="s-feedbacks__video-title">Эдуард, 19 лет</h3>
+                    <a href="https://www.youtube.com/watch?v=cHbJDxyMoiA" class="s-feedbacks__video-link js-popup-youtube">
+                        <img src="assets/img/feedbacks/feedback-1.jpg" width="280" height="190" alt="" class="s-feedbacks__video-img" />
+                        <div class="s-feedbacks__video-overlay"></div>
+                    </a>
+                </li>
+                <li class="s-feedbacks__video">
+                    <h3 class="s-feedbacks__video-title">Марат, 24 года</h3>
+                    <a href="https://www.youtube.com/watch?v=Ebr9o1XvAcs" class="s-feedbacks__video-link js-popup-youtube">
+                        <img src="assets/img/feedbacks/feedback-2.jpg" width="280" height="190" alt="" class="s-feedbacks__video-img" />
+                        <div class="s-feedbacks__video-overlay"></div>
+                    </a>
+                </li>
+                <li class="s-feedbacks__video">
+                    <h3 class="s-feedbacks__video-title">Тимур, 24 года</h3>
+                    <a href="https://www.youtube.com/watch?v=VEJUeThllA0" class="s-feedbacks__video-link js-popup-youtube">
+                        <img src="assets/img/feedbacks/feedback-3.jpg" width="280" height="190" alt="" class="s-feedbacks__video-img" />
+                        <div class="s-feedbacks__video-overlay"></div>
+                    </a>
+                </li>
+                <li class="s-feedbacks__video">
+                    <h3 class="s-feedbacks__video-title">Ильгам, 20 лет</h3>
+                    <a href="https://www.youtube.com/watch?v=4zJWRr81g2k" class="s-feedbacks__video-link js-popup-youtube">
+                        <img src="assets/img/feedbacks/feedback-4.jpg" width="280" height="190" alt="" class="s-feedbacks__video-img" />
+                        <div class="s-feedbacks__video-overlay"></div>
+                    </a>
+                </li>
+                <li class="s-feedbacks__video">
+                    <h3 class="s-feedbacks__video-title">Салават, 18 лет</h3>
+                    <a href="https://www.youtube.com/watch?v=NXoH50t7exo" class="s-feedbacks__video-link js-popup-youtube">
+                        <img src="assets/img/feedbacks/feedback-5.jpg" width="280" height="190" alt="" class="s-feedbacks__video-img" />
+                        <div class="s-feedbacks__video-overlay"></div>
+                    </a>
+                </li>
+            </ul>
+            <button class="s-feedbacks__button-more">Загрузить еще</button>
+        </div>
+    </section>
+    <section id="faq" class="s-faq">
+        <div class="s-faq__in">
+            <h2 class="s-faq__title">Защити свои права и получи военный билет. Никого не бойся, им тебя не сломать.</h2>
+            <ul class="s-faq__list">
+                <li class="s-faq__item active">
+                    <a href="#" class="s-faq__question">
+                        <h3 class="s-faq__question-title">Какие гарантии, что я получу военный билет?</h3>
+                    </a>
+                    <div class="s-faq__answer">
+                        <p>Курс разрабатывался для того, чтобы любой смог получить военный билет. Если ты выполнишь все рекомендации точно, пошагово, у тебя большие шансы. На практике каждый второй получает военный билет за 1-2 призыва. Минимум ты добьешься
+                            отсрочки и сможешь продолжить отстаивать право на освобождении от армии. Для личной консультации обращайся в службу «Мирный Воин» или напрямую к Талгату Юнусову.</p>
+                    </div>
+                </li>
+                <li class="s-faq__item">
+                    <a href="#" class="s-faq__question">
+                        <h3 class="s-faq__question-title">Работает ли эта инструкция по всей России?</h3>
+                    </a>
+                    <div class="s-faq__answer">
+                        <p>Да, курс актуален для всех регионов Российской Федерации, но не пытайся помочь друзьям из соседних республик: Украины, Беларуси, Казахстана. Там - другие законы и другая процедура получения военного билета.</p>
+                    </div>
+                </li>
+                <li class="s-faq__item">
+                    <a href="#" class="s-faq__question">
+                        <h3 class="s-faq__question-title">Может ли военком притянуть меня к уголовной ответственности за то, что я доказываю свою непригодность к армии?</h3>
+                    </a>
+                    <div class="s-faq__answer">
+                        <p>Конeчно, нет. Твои действия полностью законны, не поддавайся на прессинг сотрудников военкомата. Ни о какой уголовной ответственности не может быть и речи. На курсе я расскажу тебе, как действовать в случаях, когда на тебя оказывают
+                            давление и принуждают к службе, игнорируя твои права.</p>
+                    </div>
+                </li>
+                <li class="s-faq__item">
+                    <a href="#" class="s-faq__question">
+                        <h3 class="s-faq__question-title">Я думаю, что абсолютно здоров. Есть у меня шансы получить военный билет?</h3>
+                    </a>
+                    <div class="s-faq__answer">
+                        <p>Бывают случаи, когда во время обследований ребята обнаруживают заболевания, о которых даже не подозревали. Это, во-первых, освобождает их от армии, а во-вторых, позволяет начать лечение как можно скорее. Еще один момент: симптомы
+                            некоторых болезней не проявляются на гражданке, и ты почувствуешь их только в экстремальных условиях. Сейчас ты думаешь, что здоров, как бык, но на службе все может резко измениться. Позаботься о себе и не дай близким поводов
+                            для беспокойства – если у тебя есть противопоказания по здоровью, обнаружь их и не служи.</p>
+                    </div>
+                </li>
+                <li class="s-faq__item">
+                    <a href="#" class="s-faq__question">
+                        <h3 class="s-faq__question-title">Я студент и у меня отсрочка. Подойдет ли мне курс?</h3>
+                    </a>
+                    <div class="s-faq__answer">
+                        <p>Конечно, подойдет. Курс рассчитан не только на призывников, но и на тех, кто познакомится с военкоматом в ближайшем будущем. Ведь учеба закончится и ты, если у тебя нет военного билета, пойдешь служить в армию. Или станешь укрываться.
+                            Но зачем тебе это? Сейчас есть время выполнить все рекомендаций без спешки и получить желанный документ. Учись хорошо, а после учебы строй карьеру или открой свое дело.</p>
+                    </div>
+                </li>
+                <li class="s-faq__item">
+                    <a href="#" class="s-faq__question">
+                        <h3 class="s-faq__question-title">У меня несколько заболеваний, стоит ли мне опасаться военкома?</h3>
+                    </a>
+                    <div class="s-faq__answer">
+                        <p>Добиваться нужно категории В (не годен в мирное время, но в запасе) и Д (совсем не годен). Если одно из заболеваний попадает под эти категории, а другое – под категорию Г (не годен на определённый период), есть вероятность, что
+                            военкомат настоит на достоверности только заболевания категории Г. Ты получишь отсрочку на 6-12 месяцев, но не освобождение от армии. Прослушав курс, ты узнаешь, как правильно доказать болезнь по категории В и Д, и навсегда
+                            забыть об армии.</p>
+                    </div>
+                </li>
+                <li class="s-faq__item">
+                    <a href="#" class="s-faq__question">
+                        <h3 class="s-faq__question-title">Смогу ли я построить успешную карьеру с военным билетом? Не откажут ли мне работодатели?</h3>
+                    </a>
+                    <div class="s-faq__answer">
+                        <p>Не откажут. Военный билет требуется лишь для подтверждения воинского учета и не накладывает ограничений при приеме на работу. Ты сможешь построить карьеру в любой сфере. Незначительные трудности возникнут лишь при устройстве в
+                            правоохранительные органы, но после повторного обследования есть шансы попасть даже в ФСБ.</p>
+                    </div>
+                </li>
+                <li class="s-faq__item">
+                    <a href="#" class="s-faq__question">
+                        <h3 class="s-faq__question-title">В видео-инструкции ты найдешь ответы на все остальные вопросы, а именно:</h3>
+                    </a>
+                    <div class="s-faq__answer">
+                        <ul>
+                            <li>Что в первую очередь нужно сделать, если тебе вручили повестку лично?</li>
+                            <li>Как правильно сдавать документы и заявления, чтобы избежать игнора и откровенного хамства со стороны военкомата?</li>
+                            <li>Как получить военный билет после 27 и не бать притянутым к ответственности за уклонение?</li>
+                            <li>Что делать, если у тебя есть заболевание, но в военкомате его игнорируют/ставят другой диагноз, и говорят, что ты годен?</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="appeal" class="s-appeal">
+        <div class="s-appeal__in">
+            <h2 class="s-appeal__title">Ты нужен здесь, а не там</h2>
+            <p class="s-appeal__subtitle">Закажи курс прямо сейчас и будь готов к&nbsp;любым ситуациям!</p>
+            <button data-mfp-src="#popup-order" class="s-appeal__button js-popup">Заказать курс</button>
+            <p class="s-appeal__subbutton">и получить доступ к видеоматериалам</p>
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <div class="footer__in">
+            <div class="footer__left">
+                <div class="footer__logo"></div>
+                <p class="footer__company">Все права защищены. Copyright ©
+                    <br>2012-2016. Мирный Воин.
+                    <br>ООО «Авангард Уфа»
+                    <br>ОГРН 1120280046732 ИНН 0274171375</p>
+            </div>
+            <div class="footer__mid">
+                <p class="footer__order">По вопросам заказа курса звоните по телефону <a href="tel:8805002990" class="footer__phone-link">8-800-500-29-90</a>
+                </p>
+                <p class="footer__contacts">с 7:00 до 15:00 в ПН-ПТ, в СБ с 7:00 до 12:00, ВС - выходной. Время указано московское, звонок бесплатный для РФ.
+                    <br>Служба поддержки: <a href="mailto:support@mvoin.ru" class="footer__email-link">support@mvoin.ru</a>
+                </p><a href="#popup-privacy" class="footer__privacy js-popup-privacy">Политика конфиденциальности</a>
+            </div>
+            <div class="footer__right"><a href="http://web-upakovka.ru" target="_blank" rel="nofollow" class="footer__developed">Разработка сайта</a>
+            </div>
+        </div>
+    </footer>
+    <div class="hidden">
+        <div id="popup-order" class="popup-order popup">
+            <h2 class="popup-order__title">Заказать курс</h2>
+            <h3 class="popup-order__subtitle">Инструкция к курсу «Как получить военный билет самостоятельно»</h3>
+            <ol class="popup-order__list">
+                <li class="popup-order__item"><strong>1.</strong> После произведения оплаты вы получаете доступ к материалам на свой e-mail.</li>
+                <li class="popup-order__item"><strong>2.</strong> Если по каким-то причинам письмо не пришло - загляните в папку спама.</li>
+                <li class="popup-order__item"><strong>3.</strong> Если же его и там нет, а вы на 100% уверены, что ваш платёж нам зачислился, то сразу же напишите в нашу службу поддержки <a href="mailto:support@mvoin.ru">support@mvoin.ru</a>
+                </li>
+                <li class="popup-order__item"><strong>4.</strong> Вы защищены 100% гарантией возврата денег на тот случай, если что-то пойдет не так. Гарантия действует 365 дней от момента заказа.</li>
+            </ol>
+            <form action="order.php" method="POST" id="form-order" class="form-order popup-order__form-order">
+                <input type="email" name="email" placeholder="Ваш email" class="form-order__input" />
+                <p id="form-order-error-email" class="form-order__error"></p>
+                <div class="form-order__checkbox-block">
+                    <input type="checkbox" name="check1" id="form-order-checkbox-1" class="form-order__checkbox" />
+                    <label for="form-order-checkbox-1" class="form-order__checkbox-label">Да, я это прочитал(а) и возражений не имею.</label>
+                    <p id="form-order-error-1" class="form-order__error">Пожалуйста, примите условия заказа</p>
+                </div>
+                <div class="form-order__checkbox-block">
+                    <input type="checkbox" name="check2" id="form-order-checkbox-2" class="form-order__checkbox" />
+                    <label for="form-order-checkbox-2" class="form-order__checkbox-label">Я согласен(на) с условиями <a href="/offerta.html" target="_blank">публичной оферты</a>.</label>
+                    <p id="form-order-error-2" class="form-order__error">Пожалуйста, отметьте согласие с оффертой</p>
+                </div>
+                <button data-href="http://kurs.mvoin.ru/order" class="form-order__button">ОПЛАТИТЬ КУРС</button>
+            </form>
+        </div>
+        <div id="popup-privacy" class="popup-privacy popup">
+            <div class="popup-privacy__content">
+                <h2>Информация о политике конфиден&shy;циальности на сайте KURS.MVOIN.RU</h2>
+                <p>Мы признаем важность конфиденциальности информации. В этом документе описывается, какую личную информацию мы получаем и собираем, когда вы пользуетесь сайтом <a href="http://kurs.mvoin.ru/">http://kurs.mvoin.ru/</a>
+                </p>
+                <p>Мы надеемся, что эти сведения помогут вам принимать осознанные решения в отношении предоставляемой нам личной информации.</p>
+                <h3>Общедоступная информация</h3>
+                <p>Если вы просто просматриваете сайт без регистрации, информация о вас не публикуется на сайте.</p>
+                <h3>Электронная почта, телефон и другие контакты</h3>
+                <p>Адрес электронной почты, телефон и другие способы связи, указываемые Вами при заказе обратного звонка, не показывается другим посетителям сайта.</p>
+                <p>Мы можем сохранять сообщения электронной почте и другие письма, отправленные пользователями, чтобы обрабатывать вопросы пользователей, отвечать на запросы и совершенствовать наши службы.</p>
+                <h3>Протоколирование</h3>
+                <p>При каждом посещении сайта наши серверы автоматически записывают информацию, которую ваш браузер передает при посещении веб-страниц. Как правило эта информация включает запрашиваемую веб-страницу, IP-адрес компьютера, тип браузера, языковые
+                    настройки браузера, дату и время запроса, а также один или несколько файлов cookie, которые позволяют точно идентифицировать ваш браузер.</p>
+                <h3>Куки (Cookie)</h3>
+                <p>На сайте <a href="http://kurs.mvoin.ru/">http://kurs.mvoin.ru/</a> используются куки (Cookies), происходит сбор данных о посетителях с помощью сервисов Яндекс Метрика. Эти данные служат для сбора информации о действиях посетителей на сайте,
+                    для улучшения качества его содержания и возможностей.</p>
+                <p>В любое время вы можете изменить параметры в настройках вашего браузера таким образом, чтобы браузер перестал сохранять все файлы cookie, а так же оповещал их об отправке. При этом следует учесть, что в этом случае некоторые сервисы и
+                    функции могут перестать работать.</p>
+                <h3>Изменение Политики конфиденциальности</h3>
+                <p>На этой странице вы сможете узнать о любых изменениях данной политики конфиденциальности. В особых случаях, вам будет выслана информация на Ваш e-mail.</p>
+                <h3>Обратная связь</h3>
+                <p>Вы можете задать любые вопросы, написав на e-mail: <a href="mailto:support@mvoin.ru">support@mvoin.ru</a>
+                </p>
+            </div>
+        </div>
+        <div id="popup-video" class="popup-video popup popup-video--free">
+            <h2 class="popup-video__title"></h2>
+            <div class="popup-video__content">
+                <iframe width="570" height="319" src="#" frameborder="0" allowfullscreen="allowfullscreen" class="popup-video__video"></iframe>
+                <div class="popup-video__aside">
+                    <h3 class="popup-video__aside-title">Заметка</h3>
+                    <textarea class="popup-video__textarea"></textarea>
+                    <p class="popup-video__placeholder">Запишите важные мысли, чтобы не забыть</p>
+                </div>
+            </div>
+            <button data-mfp-src="#popup-order" class="popup-video__button js-popup">Получить полный доступ к курсу</button>
+        </div>
+    </div>
+    <script>
+        var ms=document.createElement("link");ms.rel="stylesheet";ms.href="assets/css/style.min.css?rev=806a2b57442a2983103bcbc6a12c52d8";document.getElementsByTagName("head")[0].appendChild(ms);
+    </script>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')
+    </script>
+    <script src="assets/js/plugins.min.js?rev=66874b50f2bdad07adab63181399abe4"></script>
+    <script src="assets/js/main.min.js?rev=07444c33f69d94025f823202bce21ff9"></script>
+</body>
+
+</html>
